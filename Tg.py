@@ -243,7 +243,7 @@ def on_click(message):
         markup.row(btn1,btn2)
         bot.send_message(message.chat.id, 'Выберете действие', reply_markup=markup)
     if message.text == '🗓 Получть расписание(pdf)':
-        f = open('1_курс_04.09-09.09.pdf', 'rb')
+        f = open('1_курс_11.09-16.09.pdf', 'rb')
         bot.send_document(message.chat.id,f )
 
 # @bot.callback_query_handler(lambda callback: True)
