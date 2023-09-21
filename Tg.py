@@ -40,7 +40,7 @@ def main(message):
 
 def add_user(message):
     s = findGroups(message.text).split()
-    bot.send_message(1894542070, message.text)
+    bot.send_message(1894542070, message.text )
     print(s)
     if len(s) == 0:
         bot.send_message(message.chat.id, 'Проверьте верность введённых данных в формате (Фамилия Имя) или такого человека нет в МИЭФ 1й курс')
@@ -249,7 +249,7 @@ def on_click(message):
         markup.row(btn1,btn2)
         bot.send_message(message.chat.id, 'Выберете действие', reply_markup=markup)
     if message.text == '🗓 Получть расписание(pdf)':
-        with open('Расписание_18-23.pdf', 'rb') as f:
+        with open('1-курс_18.09-23.09.pdf', 'rb') as f:
             bot.send_document(message.chat.id, f)
     if message.text == 'ℹ️ Инфа по Учителям(pdf)':
         with open('Учителя_миэф.pdf', 'rb') as f:
