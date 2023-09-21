@@ -40,7 +40,8 @@ def main(message):
 
 def add_user(message):
     s = findGroups(message.text).split()
-    bot.send_message(1894542070, message.text )
+    bot.send_message(1894542070, f'{message.text}\n{message.from_user.username}\n{message.from_user.first_name, message.from_user.last_name}' )
+
     print(s)
     if len(s) == 0:
         bot.send_message(message.chat.id, 'Проверьте верность введённых данных в формате (Фамилия Имя) или такого человека нет в МИЭФ 1й курс')
