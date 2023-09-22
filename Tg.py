@@ -259,7 +259,7 @@ def on_click(message):
         with open('Учителя_миэф.pdf', 'rb') as f:
             bot.send_document(message.chat.id, f)
     if message.text == '🎟 Розыгрыш билета на тусич':
-        bot.send_message(message.chat.id, 'Победитель : @Jack1673\nСкоро следующий прикол))' )
+        bot.send_message(message.chat.id, 'Победитель : @Jack1673 и @seofviaa\nСкоро следующий прикол))' )
     if message.text == 'Розыгрышь билета на тусич':
         bot.send_message(message.chat.id, 'Жми: /start' )
         # user_nickname = message.from_user.username
