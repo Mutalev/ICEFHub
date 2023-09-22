@@ -19,7 +19,7 @@ def main(message):
     btn2 = types.KeyboardButton('ℹ️ Инфа по Академ. группам')
     btn3 = types.KeyboardButton('ℹ️ Инфа по Англ. группам')
     btn5 = types.KeyboardButton('ℹ️ Инфа по Учителям(pdf)')
-    btn6 = types.KeyboardButton('Розыгрышь билета на тусич')
+    btn6 = types.KeyboardButton('🎟 Розыгрыш билета на тусич')
     markup.row(btn2, btn3)
     markup.row(btn5, btn6)
     text = """
@@ -34,6 +34,8 @@ def main(message):
     ℹ️ <b>Инфа по Учителям(pdf)</b> - список учителей и их почты, офисные часы(не все!).
 
     🗓 <b>Получть расписание(pdf)</b> - общее расписание в виде таблицы.
+
+    🎟 <b>Розыгрыш билета на тусич</b> - периодический аттракцион невиданной щедрости.
 
     🔧 <i>Если возникнут какие-то проблемы с ботом, сначала попробуйте перезапустить его</i> ( /start ).
 
@@ -256,15 +258,18 @@ def on_click(message):
     if message.text == 'ℹ️ Инфа по Учителям(pdf)':
         with open('Учителя_миэф.pdf', 'rb') as f:
             bot.send_document(message.chat.id, f)
+    if message.text == '🎟 Розыгрыш билета на тусич':
+        bot.send_message(message.chat.id, 'Победитель : @Jack1673\nСкоро следующий прикол))' )
     if message.text == 'Розыгрышь билета на тусич':
-        user_nickname = message.from_user.username
-        if user_nickname not in users_who_clicked:
-            users_who_clicked.add(user_nickname)
-            bot.send_message(message.chat.id, f'Вы учавствуете в розыгрыше, колличество участников: <b>{str(len(users_who_clicked))}</b>, верятность победы: <b>{1/len(users_who_clicked):.2g}</b>', parse_mode='HTML' )
-        else:
-            bot.send_message(message.chat.id, f'Вы <b>уже</b> учавствуете в розыгрыше, колличество участников: <b>{str(len(users_who_clicked))}</b>, верятность победы: <b>{1/len(users_who_clicked):.2g}</b>', parse_mode='HTML')
-        bot.send_message(1894542070, '\n'.join(f'{i + 1}. {j}' for i, j in enumerate(users_who_clicked)))
-        print(users_who_clicked)
+        bot.send_message(message.chat.id, 'Жми: /start' )
+        # user_nickname = message.from_user.username
+        # if user_nickname not in users_who_clicked:
+        #     users_who_clicked.add(user_nickname)
+        #     bot.send_message(message.chat.id, f'Вы учавствуете в розыгрыше, колличество участников: <b>{str(len(users_who_clicked))}</b>, верятность победы: <b>{1/len(users_who_clicked):.2g}</b>', parse_mode='HTML' )
+        # else:
+        #     bot.send_message(message.chat.id, f'Вы <b>уже</b> учавствуете в розыгрыше, колличество участников: <b>{str(len(users_who_clicked))}</b>, верятность победы: <b>{1/len(users_who_clicked):.2g}</b>', parse_mode='HTML')
+        # bot.send_message(1894542070, '\n'.join(f'{i + 1}. {j}' for i, j in enumerate(users_who_clicked)))
+        # print(users_who_clicked)
 
 # @bot.callback_query_handler(lambda callback: True)
 # def callback_message(callback):
