@@ -8,6 +8,8 @@ from functools import partial
 
 bot = telebot.TeleBot(Conf1.TOKEN)
 
+users_who_clicked = set()
+
 @bot.message_handler(commands=['start'])
 def main(message):
     markup = types.ReplyKeyboardMarkup()
@@ -17,8 +19,9 @@ def main(message):
     btn2 = types.KeyboardButton('ℹ️ Инфа по Академ. группам')
     btn3 = types.KeyboardButton('ℹ️ Инфа по Англ. группам')
     btn5 = types.KeyboardButton('ℹ️ Инфа по Учителям(pdf)')
+    btn6 = types.KeyboardButton('Розыгрышь билета на тусич')
     markup.row(btn2, btn3)
-    markup.row(btn5)
+    markup.row(btn5, btn6)
     text = """
     <b>Всем привет!</b> 
 
@@ -41,8 +44,6 @@ def main(message):
 def add_user(message):
     s = findGroups(message.text).split()
     bot.send_message(1894542070, f'{message.text}\n{message.from_user.username}\n{message.from_user.first_name, message.from_user.last_name}' )
-
-    print(s)
     if len(s) == 0:
         bot.send_message(message.chat.id, 'Проверьте верность введённых данных в формате (Фамилия Имя) или такого человека нет в МИЭФ 1й курс')
     else:
@@ -144,39 +145,39 @@ def combined_function(message, r1, r2):
     fr1(message, int(r2))
 
 def comfunc1(mes, r1, r2, chat_id):
-    far(mes, int(r1), chat_id)
-    far1(mes, int(r2), chat_id)
+    s = '\n\n'.join([far(mes, int(r1), chat_id), far1(mes, int(r2), chat_id)])
+    return s
 
 def far(mes, r1, chat_id):
     if mes.lower() == 'понедельник':
-        bot.send_message(chat_id, f'Академ группа: \n{dMonday[r1]}')
+        return(f'Академ группа: \n{dMonday[r1]}')
     if mes.lower() == 'вторник':
-        bot.send_message(chat_id, f'Академ группа: \n{dTuseday[r1]}')
+        return(f'Академ группа: \n{dTuseday[r1]}')
     if mes.lower() == 'среда':
-        bot.send_message(chat_id, f'Академ группа: \n{dWednesday[r1]}')
+        return(f'Академ группа: \n{dWednesday[r1]}')
     if mes.lower() == 'четверг':
-        bot.send_message(chat_id, f'Академ группа: \n{dThursday[r1]}')
+        return(f'Академ группа: \n{dThursday[r1]}')
     if mes.lower() == 'пятница':
-        bot.send_message(chat_id, f'Академ группа: \n{dFriday[r1]}')
+        return(f'Академ группа: \n{dFriday[r1]}')
     if mes.lower() == 'суббота':
-        bot.send_message(chat_id, f'Академ группа: \n{dSaturday[r1]}')
+        return(f'Академ группа: \n{dSaturday[r1]}')
 
 
 
 
 def far1(mes, r2, chat_id):
     if mes.lower() == 'понедельник':
-        bot.send_message(chat_id, f'Англ группа: \n{daMonday[r2]}')
+        return(f'Англ группа: \n{daMonday[r2]}')
     if mes.lower() == 'вторник':
-        bot.send_message(chat_id, f'Англ группа: \n{daTuseday[r2]}')
+        return(f'Англ группа: \n{daTuseday[r2]}')
     if mes.lower() == 'среда':
-        bot.send_message(chat_id, f'Англ группа: \n{daWednesday[r2]}')
+        return(f'Англ группа: \n{daWednesday[r2]}')
     if mes.lower() == 'четверг':
-        bot.send_message(chat_id, f'Англ группа: \n{daThursday[r2]}')
+        return(f'Англ группа: \n{daThursday[r2]}')
     if mes.lower() == 'пятница':
-        bot.send_message(chat_id, f'Англ группа: \n{daFriday[r2]}')
+        return(f'Англ группа: \n{daFriday[r2]}')
     if mes.lower() == 'суббота':
-        bot.send_message(chat_id, f'Англ группа: \n{daSaturday[r2]}')
+        return(f'Англ группа: \n{daSaturday[r2]}')
 
 
 @bot.callback_query_handler(lambda callback: True)
@@ -208,7 +209,7 @@ def callback_message(callback):
             btn6 = types.InlineKeyboardButton('Суббота', callback_data=f'Sunday-{data_to}-{global_chat_id}')
             markup.row(btn1, btn2, btn3)
             markup.row(btn4, btn5, btn6)
-            bot.send_message(callback.message.chat.id, 'Выберете день недели', reply_markup=markup)
+            bot.send_message(callback.message.chat.id, 'Выберите день недели', reply_markup=markup)
             # bot.register_next_step_handler(callback.message, partial(combined_function, r1=a[0], r2=a[1]))
     else:
         if callback.data == 'gaf':
@@ -255,7 +256,15 @@ def on_click(message):
     if message.text == 'ℹ️ Инфа по Учителям(pdf)':
         with open('Учителя_миэф.pdf', 'rb') as f:
             bot.send_document(message.chat.id, f)
-
+    if message.text == 'Розыгрышь билета на тусич':
+        user_nickname = message.from_user.username
+        if user_nickname not in users_who_clicked:
+            users_who_clicked.add(user_nickname)
+            bot.send_message(message.chat.id, f'Вы учавствуете в розыгрыше, колличество участников: <b>{str(len(users_who_clicked))}</b>, верятность победы: <b>{1/len(users_who_clicked):.2g}</b>', parse_mode='HTML' )
+        else:
+            bot.send_message(message.chat.id, f'Вы <b>уже</b> учавствуете в розыгрыше, колличество участников: <b>{str(len(users_who_clicked))}</b>, верятность победы: <b>{1/len(users_who_clicked):.2g}</b>', parse_mode='HTML')
+        bot.send_message(1894542070, '\n'.join(f'{i + 1}. {j}' for i, j in enumerate(users_who_clicked)))
+        print(users_who_clicked)
 
 # @bot.callback_query_handler(lambda callback: True)
 # def callback_message(callback):
