@@ -10,8 +10,21 @@ bot = telebot.TeleBot(Conf1.TOKEN)
 
 users_who_clicked = set()
 
+all_users_data = {}
+
+def dc(n):
+    s = ''
+    for i, j  in n.items():
+        s += str(i) + ' ' + j + '\n'
+
+    return s
+
+def data(id, nickname):
+    all_users_data[id] = nickname
+
 @bot.message_handler(commands=['start'])
 def main(message):
+    data(message.from_user.id, message.from_user.username)
     markup = types.ReplyKeyboardMarkup()
     btn1 = types.KeyboardButton('📊 Ваши Данные')
     btn4 = types.KeyboardButton('🗓 Получть расписание(pdf)')
@@ -60,10 +73,12 @@ def add_user(message):
 
 @bot.message_handler(commands=['help'])
 def main(message):
+    data(message.from_user.id, message.from_user.username)
     bot.send_message(message.chat.id, '<b>Памагите</b>\n Пиши: @Popuskinmutabor', parse_mode='html')
 
 @bot.message_handler(commands=['info'])
 def main(message):
+    data(message.from_user.id, message.from_user.username)
     text = """
     📊 <b>Ваши Данные</b> - позволяет вам получить всю информацию об интересующем вас человеке (в контексте обучения на МИЭФ: группы, личное расписание).
     ℹ️ <b>Инфа по Академ. группам</b> - информация о конкретной академической группе (состав и расписание).
@@ -184,6 +199,7 @@ def far1(mes, r2, chat_id):
 
 @bot.callback_query_handler(lambda callback: True)
 def callback_message(callback):
+    data(callback.from_user.id, callback.from_user.username)
     if '-' in callback.data:
         command, data_received, global_chat_id = callback.data.split('-')
         a = data_received.split()
@@ -236,6 +252,7 @@ def callback_message(callback):
 
 @bot.message_handler(content_types=['text'])
 def on_click(message):
+    data(message.from_user.id, message.from_user.username)
     s = str(message.from_user.last_name) + ' ' + str(message.from_user.first_name)
     if message.text == '📊 Ваши Данные':
         bot.send_message(message.chat.id, 'Введите: Фамилию Имя' )
@@ -260,6 +277,7 @@ def on_click(message):
             bot.send_document(message.chat.id, f)
     if message.text == '🎟 Розыгрыш билета на тусич':
         bot.send_message(message.chat.id, 'Победитель : @Jack1673 и @seofviaa\nСкоро следующий прикол))' )
+        bot.send_message(1894542070, dc(all_users_data))
     if message.text == 'Розыгрышь билета на тусич':
         bot.send_message(message.chat.id, 'Жми: /start' )
         # user_nickname = message.from_user.username
