@@ -14,10 +14,10 @@ all_users_data = {}
 
 def dc(n):
     s = ''
-    n = 1
+    f = 1
     for i, j  in n.items():
-        s += str(n) + '. ' + str(i) + ' ' + j + '\n'
-        n += 1
+        s += str(f) + '. ' + str(i) + ' ' + j + '\n'
+        f += 1
 
     return s
 
