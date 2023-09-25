@@ -1,5 +1,6 @@
 import telebot
 import Conf1
+import json
 import random
 from telebot import types
 from Dasboot import findGroups,findGroup1,findGroup2
@@ -10,7 +11,12 @@ bot = telebot.TeleBot(Conf1.TOKEN)
 
 users_who_clicked = set()
 
+with open('database.json', encoding='UTF-8') as file:
+    all_users_data1 = json.load(file)
+
 all_users_data = {}
+for i in all_users_data1:
+    all_users_data[int(i)] = all_users_data1[i]
 
 def dc(n):
     s = ''
@@ -23,6 +29,10 @@ def dc(n):
 
 def data(id, nickname):
     all_users_data[id] = nickname
+
+def js(n):
+    with open('database.json', 'w', encoding='UTF-8') as file:
+        json.dump(n, file, indent=4)
 
 @bot.message_handler(commands=['start'])
 def main(message):
@@ -202,6 +212,7 @@ def far1(mes, r2, chat_id):
 @bot.callback_query_handler(lambda callback: True)
 def callback_message(callback):
     data(callback.from_user.id, callback.from_user.username)
+    js(all_users_data)
     if '-' in callback.data:
         command, data_received, global_chat_id = callback.data.split('-')
         a = data_received.split()
@@ -255,6 +266,7 @@ def callback_message(callback):
 @bot.message_handler(content_types=['text'])
 def on_click(message):
     data(message.from_user.id, message.from_user.username)
+    js(all_users_data)
     s = str(message.from_user.last_name) + ' ' + str(message.from_user.first_name)
     if message.text == '📊 Ваши Данные':
         bot.send_message(message.chat.id, 'Введите: Фамилию Имя' )
@@ -279,7 +291,8 @@ def on_click(message):
             bot.send_document(message.chat.id, f)
     if message.text == '🎟 Розыгрыш билета на тусич':
         bot.send_message(message.chat.id, 'Победитель : @Jack1673 и @seofviaa\nСкоро следующий прикол))' )
-        bot.send_message(1894542070, dc(all_users_data))
+        if message.chat.id == 1894542070:
+            bot.send_message(1894542070, dc(all_users_data))
     if message.text == 'Розыгрышь билета на тусич':
         bot.send_message(message.chat.id, 'Жми: /start' )
         # user_nickname = message.from_user.username
