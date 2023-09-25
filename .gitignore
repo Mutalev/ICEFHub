@@ -162,3 +162,4 @@ cython_debug/
 f1.xlsx
 pdf.txt
 .DB_Store
+database.json

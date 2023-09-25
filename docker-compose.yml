@@ -10,3 +10,5 @@ services:
     env_file:
       - .env
     restart: always
+    volumes:
+      - ./database.json:/app/database.json
