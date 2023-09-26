@@ -22,7 +22,10 @@ def dc(n):
     s = ''
     f = 1
     for i, j  in n.items():
-        s += f'{f}. {i} @{j}\n'
+        if j is None:
+            s += f'{f}. {i} @none\n'
+        else:
+            s += f'{f}. {i} @{j}\n'
         f += 1
 
     return s
