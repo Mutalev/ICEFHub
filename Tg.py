@@ -22,7 +22,7 @@ def dc(n):
     s = ''
     f = 1
     for i, j  in n.items():
-        s += str(f) + '. ' + str(i) + ' ' + j + '\n'
+        s += f'{f}. {i} @{j}\n'
         f += 1
 
     return s
@@ -33,6 +33,13 @@ def data(id, nickname):
 def js(n):
     with open('database.json', 'w', encoding='UTF-8') as file:
         json.dump(n, file, indent=4)
+
+
+# def ras(message):
+#     for i in all_users_data:
+#         bot.send_message(i, message.text)
+
+
 
 @bot.message_handler(commands=['start'])
 def main(message):
@@ -82,6 +89,10 @@ def add_user(message):
         bot.send_message(message.chat.id, 'Жми', reply_markup=markup)
 
     
+# @bot.message_handler(commands=['admin1'])
+# def main(message):
+#     if message.from_user.id == 1894542070:
+#         bot.register_next_step_handler(message, ras)
 
 @bot.message_handler(commands=['help'])
 def main(message):
