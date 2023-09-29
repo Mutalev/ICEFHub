@@ -65,7 +65,7 @@ dFriday = {
     4:'9:30-10:50 Математический анализ (Calculus) (l) (A.E. Patrik) room R304\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 (14.40-17.40)  Программирование и базы данных (Programming and Databases) (A.A. Akinshin) к.к. D207 (если выбирали)',
     5:'9:30-10:50 Математический анализ (Calculus) (l) (A.E. Patrik) room R304\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 (14.40-17.40)  Программирование и базы данных (Programming and Databases) (A.A. Akinshin) к.к. D207 (если выбирали)',
     6:'9:30-10:50 Информационные компьютерные системы(Information Computer Systems)(s) (A.A. Akinshin) к.к R612\n11:10-12:30 Математический анализ (Calculus) (l)(A.E. Patrik) room R301\n13:00-14:20 Информационные компьютерные системы (Information Computer Systems) (s) (A.A. Akinshin)к.к. R610\n14:40-16:00 -\n16:20-17:40 (14.40-17.40)  Программирование и базы данных (Programming and Databases) (A.A. Akinshin) к.к. D207 (если выбирали)',
-    7:'9:30-10:50 -\n11:10-12:30 Математический анализ (Calculus) (l) (A.E. Patrik) room R301\n13:00-14:20 Основы микроэкономики(Introduction to Microeconomics) (s) (G.A. Zimrutyan) room\n14:40-16:00 Математический анализ (Calculus) (s) (P.V. Zhukov) room G119\n16:20-17:40 (14.40-17.40)  Программирование и базы данных (Programming and Databases) (A.A. Akinshin) к.к. D207 (если выбирали)',
+    7:'9:30-10:50 -\n11:10-12:30 Математический анализ (Calculus) (l) (A.E. Patrik) room R301\n13:00-14:20 Основы микроэкономики(Introduction to Microeconomics) (s) (G.A. Zimrutyan)  room M303\n14:40-16:00 Математический анализ (Calculus) (s) (P.V. Zhukov) room G119\n16:20-17:40 (14.40-17.40)  Программирование и базы данных (Programming and Databases) (A.A. Akinshin) к.к. D207 (если выбирали)',
     8:'9:30-10:50 Теория вероятностей и основы статистики (Introduction to Probability Theory and Statistics) (s)(Ya.A. Lyulko) room R207\n11:10-12:30 Математический анализ (Calculus) (l) (A.E. Patrik) room R301\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 (14.40-17.40)  Программирование и базы данных (Programming and Databases) (A.A. Akinshin) к.к. D207 (если выбирали)',
     9:'9:30-10:50 Основы микроэкономики (Introduction to Microeconomics) (s) (G.A. Zimrutyan) room G107\n11:10-12:30 Математический анализ (Calculus) (l) (A.E. Patrik) room R301\n13:00-14:20\n14:40-16:00 -\n16:20-17:40 (14.40-17.40)  Программирование и базы данных (Programming and Databases) (A.A. Akinshin) к.к. D207 (если выбирали)',
     10:'9:30-10:50 -\n11:10-12:30 Математический анализ (Calculus) (l) (A.E. Patrik) room R301\n13:00-14:20 Информационные компьютерные системы (Information Computer Systems) (s) (I.A. Bessonova) к.к. D207\n14:40-16:00 Информационные компьютерные системы (Information Computer Systems) (s) (I.A. Bessonova) к.к. D207\n16:20-17:40  (14.40-17.40)  Программирование и базы данных (Programming and Databases) (A.A. Akinshin) к.к. D207 (если выбирали)',
@@ -172,7 +172,7 @@ daThursday = {
 
 daFriday = {
     1:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
-    2:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
+    2:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 English language J. Rizzotti room R603\n16:20-17:40 -',
     3:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
     4:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
     5:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
