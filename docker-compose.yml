@@ -12,3 +12,4 @@ services:
     restart: always
     volumes:
       - ./database.json:/app/database.json
+      - ./raffle.json:/app/raffle.json

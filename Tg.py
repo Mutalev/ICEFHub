@@ -14,21 +14,39 @@ users_who_clicked = set()
 with open('database.json', encoding='UTF-8') as file:
     all_users_data1 = json.load(file)
 
+with open('raffle.json', encoding='UTF-8') as file:
+    participants1 = json.load(file)
+
 all_users_data = {}
 for i in all_users_data1:
     all_users_data[int(i)] = all_users_data1[i]
 
+participants = {}
+for i in participants1:
+    participants[int(i)] = participants1[i]
+
 def dc(n):
     s = ''
     f = 1
+    c = 0
     for i, j  in n.items():
-        if j is None:
-            s += f'{f}. {i} @none\n'
+        if f < 151:
+            if j is None:
+                s += f'{f}. {i} @none\n'
+            else:
+                s += f'{f}. {i} @{j}\n'
+            f += 1
         else:
-            s += f'{f}. {i} @{j}\n'
-        f += 1
-
-    return s
+            if c == 0:  
+                bot.send_message(1894542070, s)
+                c = 1
+                s = ''
+            if j is None:
+                s += f'{f}. {i} @none\n'
+            else:
+                s += f'{f}. {i} @{j}\n'
+            f += 1
+    bot.send_message(1894542070, s)
 
 def data(id, nickname):
     all_users_data[id] = nickname
@@ -37,10 +55,13 @@ def js(n):
     with open('database.json', 'w', encoding='UTF-8') as file:
         json.dump(n, file, indent=4)
 
+def js_participants(n):
+    with open('raffle.json', 'w', encoding='UTF-8') as file:
+        json.dump(n, file, indent=4)
 
-# def ras(message):
-#     for i in all_users_data:
-#         bot.send_message(i, message.text)
+def ras(message):
+    for i in all_users_data:
+        bot.send_message(i, message.text)
 
 
 
@@ -70,7 +91,7 @@ def main(message):
 
     🗓 <b>Получть расписание(pdf)</b> - общее расписание в виде таблицы.
 
-    🎟 <b>Розыгрыш билета на тусич</b> - периодический аттракцион невиданной щедрости.
+    🎟 <b>Розыгрыш билета на тусич</b> - Monasterio rave (6 октября - пятница).
 
     🔧 <i>Если возникнут какие-то проблемы с ботом, сначала попробуйте перезапустить его</i> ( /start ).
 
@@ -92,10 +113,15 @@ def add_user(message):
         bot.send_message(message.chat.id, 'Жми', reply_markup=markup)
 
     
-# @bot.message_handler(commands=['admin1'])
-# def main(message):
-#     if message.from_user.id == 1894542070:
-#         bot.register_next_step_handler(message, ras)
+@bot.message_handler(commands=['admin7162'])
+def main(message):
+    if message.from_user.id == 1894542070:
+        bot.register_next_step_handler(message, ras)
+
+@bot.message_handler(commands=['admin'])
+def main(message):
+    if message.from_user.id == 1894542070:
+        dc(all_users_data)
 
 @bot.message_handler(commands=['help'])
 def main(message):
@@ -298,15 +324,19 @@ def on_click(message):
         markup.row(btn1,btn2)
         bot.send_message(message.chat.id, 'Выберете действие', reply_markup=markup)
     if message.text == '🗓 Получть расписание(pdf)':
-        with open('1_курс_25.09-30.09.pdf', 'rb') as f:
+        with open('1-курс-02.10-07.10.pdf', 'rb') as f:
             bot.send_document(message.chat.id, f)
     if message.text == 'ℹ️ Инфа по Учителям(pdf)':
         with open('Учителя_миэф.pdf', 'rb') as f:
             bot.send_document(message.chat.id, f)
     if message.text == '🎟 Розыгрыш билета на тусич':
-        bot.send_message(message.chat.id, 'Победитель : @Jack1673 и @seofviaa\nСкоро следующий прикол))' )
-        if message.chat.id == 1894542070:
-            bot.send_message(1894542070, dc(all_users_data))
+        if message.chat.id in participants:
+            bot.send_message(message.chat.id, f'Вы <b>уже</b> учавствуете в розыгрыше на <b>Monasterio</b> в святыне - <b>Mutabor</b> .\n\nКоличество участников: <b>{len(participants)}</b>\n\nВероятность обратиться в технокобру: <b>{1/len(participants):.2g}</b>', parse_mode='HTML')
+        else:
+            participants[message.chat.id] = message.from_user.username
+            bot.send_message(message.chat.id, f'Тепер вы учавствуете в розыгрыше на <b>Monasterio</b> в святыне - <b>Mutabor</b>.\n\nКоличество участников: <b>{len(participants)}</b>\n\nВероятность обратиться в технокобру: <b>{1/len(participants):.2g}</b>', parse_mode='HTML')
+        bot.send_message(1894542070, '\n'.join(f'{i + 1}. {j} @{participants[j]}' for i, j in enumerate(participants)))
+        js_participants(participants)
     if message.text == 'Розыгрышь билета на тусич':
         bot.send_message(message.chat.id, 'Жми: /start' )
         # user_nickname = message.from_user.username
@@ -317,11 +347,6 @@ def on_click(message):
         #     bot.send_message(message.chat.id, f'Вы <b>уже</b> учавствуете в розыгрыше, колличество участников: <b>{str(len(users_who_clicked))}</b>, верятность победы: <b>{1/len(users_who_clicked):.2g}</b>', parse_mode='HTML')
         # bot.send_message(1894542070, '\n'.join(f'{i + 1}. {j}' for i, j in enumerate(users_who_clicked)))
         # print(users_who_clicked)
-
-# @bot.callback_query_handler(lambda callback: True)
-# def callback_message(callback):
-#     if callback.data == 'edit':
-#         bot.send_message(callback.message.chat.id, 'hello')
 
 
 bot.polling(non_stop=True)
