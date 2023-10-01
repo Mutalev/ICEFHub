@@ -60,9 +60,14 @@ def js_participants(n):
         json.dump(n, file, indent=4)
 
 def ras(message):
+    user_to_remove = []
     for i in all_users_data:
-        bot.send_message(i, message.text)
-
+        try:
+            bot.send_message(i, message.text)
+        except Exception as e:
+            user_to_remove.append(i)
+    for i in user_to_remove:
+        del all_users_data[i]
 
 
 @bot.message_handler(commands=['start'])
