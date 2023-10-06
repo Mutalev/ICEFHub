@@ -96,7 +96,7 @@ def main(message):
 
     🗓 <b>Получть расписание(pdf)</b> - общее расписание в виде таблицы.
 
-    🎟 <b>Розыгрыш билета на тусич</b> - Monasterio rave (6 октября - пятница).
+    🎟 <b>Розыгрыш билета на тусич</b> - ждём следующий.
 
     🔧 <i>Если возникнут какие-то проблемы с ботом, сначала попробуйте перезапустить его</i> ( /start ).
 
@@ -335,13 +335,14 @@ def on_click(message):
         with open('Учителя_миэф.pdf', 'rb') as f:
             bot.send_document(message.chat.id, f)
     if message.text == '🎟 Розыгрыш билета на тусич':
-        if message.chat.id in participants:
-            bot.send_message(message.chat.id, f'Вы <b>уже</b> учавствуете в розыгрыше на <b>Monasterio</b> в святыне - <b>Mutabor</b> .\n\nКоличество участников: <b>{len(participants)}</b>\n\nВероятность обратиться в технокобру: <b>{1/len(participants):.2g}</b>', parse_mode='HTML')
-        else:
-            participants[message.chat.id] = message.from_user.username
-            bot.send_message(message.chat.id, f'Тепер вы учавствуете в розыгрыше на <b>Monasterio</b> в святыне - <b>Mutabor</b>.\n\nКоличество участников: <b>{len(participants)}</b>\n\nВероятность обратиться в технокобру: <b>{1/len(participants):.2g}</b>', parse_mode='HTML')
-        bot.send_message(1894542070, '\n'.join(f'{i + 1}. {j} @{participants[j]}' for i, j in enumerate(participants)))
-        js_participants(participants)
+        bot.send_message(message.chat.id, 'Окончено' )
+        # if message.chat.id in participants:
+        #     bot.send_message(message.chat.id, f'Вы <b>уже</b> учавствуете в розыгрыше на <b>Monasterio</b> в святыне - <b>Mutabor</b> .\n\nКоличество участников: <b>{len(participants)}</b>\n\nВероятность обратиться в технокобру: <b>{1/len(participants):.2g}</b>', parse_mode='HTML')
+        # else:
+        #     participants[message.chat.id] = message.from_user.username
+        #     bot.send_message(message.chat.id, f'Тепер вы учавствуете в розыгрыше на <b>Monasterio</b> в святыне - <b>Mutabor</b>.\n\nКоличество участников: <b>{len(participants)}</b>\n\nВероятность обратиться в технокобру: <b>{1/len(participants):.2g}</b>', parse_mode='HTML')
+        # bot.send_message(1894542070, '\n'.join(f'{i + 1}. {j} @{participants[j]}' for i, j in enumerate(participants)))
+        # js_participants(participants)
     if message.text == 'Розыгрышь билета на тусич':
         bot.send_message(message.chat.id, 'Жми: /start' )
         # user_nickname = message.from_user.username
