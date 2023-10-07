@@ -157,7 +157,7 @@ daThursday = {
     4:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 English language G. Hough room N507',
     5:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
     6:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
-    7:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
+    7:'9:30-10:50 English language B. Milburn room S331\n11:10-12:30 English language М. Singh Mann room S332\n13:00-14:20 English language М. Singh Mann room S332\n14:40-16:00 -\n16:20-17:40 -',
     8:'9:30-10:50 English language G. Hough room N507\n11:10-12:30 English language G. Hough room N507\n13:00-14:20 English language M.A. Balakireva room T304\n14:40-16:00 -\n16:20-17:40 -',
     9:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
     10:'9:30-10:50 -\n11:10-12:30 English language N.B. Kolyadina room S319\n13:00-14:20 English language G. Hough room N507\n14:40-16:00 English language G. Hough room N507\n16:20-17:40 -',
