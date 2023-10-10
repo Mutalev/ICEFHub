@@ -13,7 +13,7 @@ dMonday = {
 }
 
 dTuseday = {
-    1:'9:30-10:50 -\n11:10-12:30 Информационные компьютерные системы (Information Computer Systems) (s) (I.A. Bessonova) к.к. R612\n 13:00-14:20 Информационные компьютерные системы (Information Computer Systems) (s) (I.A. Bessonova) к.к. R612\n14:40-16:00 Основы микроэкономики (Introduction to Microeconomics) (l) (A.V. Yurko) room R201\n16:20-17:40 -',
+    1:'9:30-10:50 -\n11:10-12:30 Информационные компьютерные системы (Information Computer Systems) (s) (I.A. Bessonova) к.к. R614\n 13:00-14:20 Информационные компьютерные системы (Information Computer Systems) (s) (I.A. Bessonova) к.к. R614\n14:40-16:00 Основы микроэкономики (Introduction to Microeconomics) (l) (A.V. Yurko) room R201\n16:20-17:40 -',
     2:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 Основы микроэкономики (Introduction to Microeconomics) (l) (A.V. Yurko) room R201\n16:20-17:40 -',
     3:'9:30-10:50 -\n11:10-12:30 Математический анализ(Calculus) (s) (A.D. Vorchik) room M302\n13:00-14:20 -\n14:40-16:00 Основы микроэкономики (Introduction to Microeconomics) (l) (A.V. Yurko) room R201room R201\n16:20-17:40 -',
     4:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 Теория вероятностей и основы статистики (Introduction to Probability Theory and Statistics) (s) (V.A. Rudenko) room G407\n14:40-16:00 Основы микроэкономики (Introduction to Microeconomics) (l) (A.V. Yurko) room R201\n16:20-17:40 -',
