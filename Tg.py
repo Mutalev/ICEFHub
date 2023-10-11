@@ -1,7 +1,6 @@
 import telebot
 import Conf1
 import json
-import g4f
 from telebot import types
 from Dasboot import findGroups,findGroup1,findGroup2
 from PDFslayer import *
@@ -69,20 +68,20 @@ def ras(message):
     for i in user_to_remove:
         del all_users_data[i]
 
-def aip(message):
-    s = ''
-    response = g4f.ChatCompletion.create(
-    model="gpt-3.5-turbo",
-    messages=[{"role": "user", "content": message.text}],
-    stream=True,)
-    for i in response:
-        s += i
-    bot.send_message(message.chat.id, s)
+# def aip(message):
+#     s = ''
+#     response = g4f.ChatCompletion.create(
+#     model="gpt-3.5-turbo",
+#     messages=[{"role": "user", "content": message.text}],
+#     stream=True,)
+#     for i in response:
+#         s += i
+#     bot.send_message(message.chat.id, s)
 
 
-@bot.message_handler(commands=['ai'])
-def main(message):
-    bot.register_next_step_handler(message, aip)
+# @bot.message_handler(commands=['ai'])
+# def main(message):
+#     bot.register_next_step_handler(message, aip)
 
 
 @bot.message_handler(commands=['start'])
