@@ -38,7 +38,7 @@ dWednesday = {
     8:'9:30-10:50 -\n11:10-12:30 Теория вероятностей и основы статистики (Introduction to Probability Theory and Statistics) (l) (Ya.A. Lyulko) room R204\n13:00-14:20 -\n14:40-16:00 Информационные компьютерные системы(Information Computer Systems) (s) (I.A. Bessonova) к.к. R611\n16:20-17:40 Информационные компьютерные системы(Information Computer Systems) (s)(I.A. Bessonova) к.к. R611',
     9:'9:30-10:50 -\n11:10-12:30 Теория вероятностей и основы статистики (Introduction to Probability Theory and Statistics) (l) (Ya.A. Lyulko) room R204\n13:00-14:20 Основы микроэкономики (Introduction to Microeconomics) (s) (G.A. Zimrutyan) room G107\n14:40-16:00 -\n16:20-17:40 -',
     10:'9:30-10:50 Основы микроэкономики(Introduction to Microeconomics) (s)(I.Yu. Verem) room G110\n11:10-12:30 Теория вероятностей и основы статистики (Introduction to Probability Theory and Statistics) (l) (Ya.A. Lyulko) room R204\n13:00-14:20\n14:40-16:00 -\n16:20-17:40 -',
-    11:'9:30-10:50 -\n11:10-12:30 Теория вероятностей и основы статистики (Introduction to Probability Theory and Statistics) (l) (Ya.A. Lyulko) room R204\n13:00-14:20 Теория вероятностей и основы статистики (Introduction to Probability Theory and Statistics)(A.G. Shelike) (s) room  G109\n14:40-16:00 -\n16:20-17:40 (2 пары) Информационные компьютерные системы (Information Computer Systems) (s) (A.A. Akinshin) к.к.',
+    11:'9:30-10:50 -\n11:10-12:30 Теория вероятностей и основы статистики (Introduction to Probability Theory and Statistics) (l) (Ya.A. Lyulko) room R204\n13:00-14:20 Теория вероятностей и основы статистики (Introduction to Probability Theory and Statistics)(A.G. Shelike) (s) room  G109\n14:40-16:00 -\n16:20-17:40 (2 пары) Информационные компьютерные системы (Information Computer Systems) (s) (A.A. Akinshin) к.к. R608',
 }
 
 
@@ -52,7 +52,7 @@ dThursday = {
     7:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
     8:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
     9:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 Информационные компьютерные системы(Information Computer Systems) (s) (A.A. Akinshin) к.к. R610\n16:20-17:40 Информационные компьютерные системы(Information Computer Systems) (s) (A.A. Akinshin) к.к. R610',
-    10:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
+    10:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 Информационные компьютерные системы (Information Computer Systems) (s) (I.A. Bessonova) к.к. D208\n16:20-17:40 Информационные компьютерные системы (Information Computer Systems) (s) (I.A. Bessonova) к.к. R612',
     11:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
 }
 
