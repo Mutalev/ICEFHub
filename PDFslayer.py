@@ -75,13 +75,13 @@ dFriday = {
 
 
 dSaturday = {
-    1:'9:30-10:50 Информационные компьютерные системы (Information Computer Systems) (s) (I.A. Bessonova) к.к. R603\n11:10-12:30 Информационные компьютерные системы (Information Computer Systems) (s) (I.A. Bessonova) к.к. R603\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
+    1:'9:30-10:50 Информационные компьютерные системы (Information Computer Systems) (s) (I.A. Bessonova) к.к. R612\n11:10-12:30 Информационные компьютерные системы (Information Computer Systems) (s) (I.A. Bessonova) к.к. R612\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
     2:'9:30-10:50 Основы микроэкономики (Introduction to Microeconomics) (s)(Ya.A. Chernyshova) room M302\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
     3:'9:30-10:50 -\n11:10-12:30 Информационные компьютерные системы (Information Computer Systems) (s) (N.A. Akin’shin) к.к.\n13:00-14:20 Информационные компьютерные системы (Information Computer Systems) (s) (N.A. Akin’shin) к.к.\n14:40-16:00 -\n16:20-17:40 -',
     4:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 Математический анализ (Calculus) (s) (V.V. Kiryanov) room  R201\n14:40-16:00 Информационные компьютерные системы (Information Computer Systems) (s) (N.A. Akin’shin) к.к. \n16:20-17:40 Информационные компьютерные системы (Information Computer Systems) (s) (N.A. Akin’shin) к.к. ',
     5:'9:30-10:50 Информационные компьютерные системы (Information Computer Systems) (s) (A.A. Akinshin) к.к. N204\n11:10-12:30 Информационные компьютерные системы (Information Computer Systems) (s) (A.A. Akinshin) к.к. N204\n13:00-14:20 Математический анализ (Calculus) (s)(P.I. Mamaeva) room G120\n14:40-16:00 Теория вероятностей и основы статистики (Introduction to Probability Theory and Statistics) (s)(Ya.A. Lyulko) room G108\n16:20-17:40 -',
     6:'9:30-10:50 Математический анализ (Calculus) (s) (K.V. Kovaltsun) room G103\n11:10-12:30 Основы микроэкономики(Introduction to Microeconomics) (s)(Ya.A. Chernyshova)room M302\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
-    7:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 Информационные компьютерные системы (Information Computer Systems) (s) (I.A. Bessonova) к.к R614\n14:40-16:00 Информационные компьютерные системы (Information Computer Systems) (s) (I.A. Bessonova) к.к T316\n16:20-17:40 -',
+    7:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 Информационные компьютерные системы (Information Computer Systems) (s) (I.A. Bessonova) к.к R612\n14:40-16:00 Информационные компьютерные системы (Information Computer Systems) (s) (I.A. Bessonova) к.к R612\n16:20-17:40 -',
     8:'9:30-10:50 -\n11:10-12:30 Математический анализ (Calculus) (s) (P.I. Mamaeva) room D504\n13:00-14:20 Основы микроэкономики (Introduction to Microeconomics) (s)(Ya.A. Chernyshova) room G410\n14:40-16:00 -\n16:20-17:40 -',
     9:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 Математический анализ (Calculus)(s) (V.V. Kiryanov) room M202\n16:20-17:40 -',
     10:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
