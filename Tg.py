@@ -89,7 +89,7 @@ def main(message):
     data(message.from_user.id, message.from_user.username)
     markup = types.ReplyKeyboardMarkup()
     btn1 = types.KeyboardButton('📊 Ваши Данные')
-    btn4 = types.KeyboardButton('🗓 Получть расписание(pdf)')
+    btn4 = types.KeyboardButton('🗓 Получить расписание(pdf)')
     markup.row(btn1, btn4)
     btn2 = types.KeyboardButton('ℹ️ Инфа по Академ. группам')
     btn3 = types.KeyboardButton('ℹ️ Инфа по Англ. группам')
@@ -342,7 +342,7 @@ def on_click(message):
         btn2 = types.InlineKeyboardButton('Расписание группы', callback_data='gaf3')
         markup.row(btn1,btn2)
         bot.send_message(message.chat.id, 'Выберете действие', reply_markup=markup)
-    if message.text == '🗓 Получть расписание(pdf)':
+    if message.text == '🗓 Получить расписание(pdf)':
         with open('1-курс-01.11-04.11.pdf', 'rb') as f:
             bot.send_document(message.chat.id, f)
         bot.send_message(1894542070, f'@{message.from_user.username}')

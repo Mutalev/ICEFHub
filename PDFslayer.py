@@ -44,13 +44,13 @@ dWednesday = {
 
 dThursday = {
     1:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
-    2:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -\n18:10-19:30 Основы российской государственности (Foundations of Russian Statehood) (с) (I.V. Smirnova) room',
-    3:'9:30-10:50 Информационные компьютерные системы (Information Computer Systems) (s) (N.A. Akinshin)к.к. D210\n11:10-12:30 Информационные компьютерные системы (Information Computer Systems) (s) (N.A. Akinshin)к.к. D210\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
-    4:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 Информационные компьютерные системы (Information Computer Systems) (s) (N.A. Akinshin)к.к. D210\n14:40-16:00 Информационные компьютерные системы (Information Computer Systems) (s) (N.A. Akinshin)к.к. D210\n16:20-17:40 -',
+    2:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -\n18:10-19:30 Основы российской государственности (Foundations of Russian Statehood) (с) (I.V. Smirnova) room G108',
+    3:'9:30-10:50 Перенос на 11.11 Информационные компьютерные системы (Information Computer Systems) (s) (N.A. Akinshin)к.к. D210\n11:10-12:30 Перенос на 11.11 Информационные компьютерные системы (Information Computer Systems) (s) (N.A. Akinshin)к.к. D210\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
+    4:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 Перенос на 11.11 Информационные компьютерные системы (Information Computer Systems) (s) (N.A. Akinshin)к.к. D210\n14:40-16:00  Перенос на 11.11 Информационные компьютерные системы (Information Computer Systems) (s) (N.A. Akinshin)к.к. D210\n16:20-17:40 -',
     5:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
     6:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
     7:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-19:30 Информационные компьютерные системы (Information Computer Systems) (s) (I.A. Bessonova) к.к.',
-    8:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 Основы российской государственности (Foundations of Russian Statehood) (с) (I.V. Smirnova) room',
+    8:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 Основы российской государственности (Foundations of Russian Statehood) (с) (I.V. Smirnova) room G108',
     9:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 Информационные компьютерные системы(Information Computer Systems) (s) (A.A. Akinshin) к.к. R610\n16:20-17:40 Информационные компьютерные системы(Information Computer Systems) (s) (A.A. Akinshin) к.к. R610',
     10:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
     11:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
@@ -62,12 +62,12 @@ dFriday = {
     1:'9:30-10:50 Математический анализ (Calculus) (l) (A.E. Patrik) room R301\n11:10-12:30 Математический анализ(Calculus) (s) (P.V. Zhukov) room М303\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 (14.40-19.30)  Программирование и базы данных (Programming and Databases) (A.A. Akinshin)  R610\n',
     2:'9:30-10:50 Математический анализ (Calculus) (l) (A.E. Patrik) room R301\n11:10-12:30 Теория вероятностей и основы статистики (Introduction to Probability Theory and Statistics) (s) (Ya.A. Lyulko) room R207\n13:00-14:20 Математический анализ(Calculus) (s) (P.V. Zhukov) room М303\n14:40-16:00 -\n16:20-17:40 (14.40-19.30)  Программирование и базы данных (Programming and Databases) (A.A. Akinshin)  R610\n',
     3:'9:30-10:50 Математический анализ (Calculus) (l) (A.E. Patrik) room R301\n11:10-12:30 Основы микроэкономики (Introduction to Microeconomics) (s)(I.Yu. Verem) room  G114\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 (14.40-19.30)  Программирование и базы данных (Programming and Databases) (A.A. Akinshin)  R610\n',
-    4:'9:30-10:50 Математический анализ (Calculus) (l) (A.E. Patrik) room R301\n11:10-12:30 Основы российской государственности (Foundations of Russian Statehood) (с) (M.S. Petrova) room G116\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 (14.40-19.30)  Программирование и базы данных (Programming and Databases) (A.A. Akinshin)  R610\n',
+    4:'9:30-10:50 Математический анализ (Calculus) (l) (A.E. Patrik) room R301\n11:10-12:30 Основы российской государственности (Foundations of Russian Statehood) (с) (M.S. Petrova) room G116\n13:00-14:20 Математический анализ (Calculus) (s) (V.V. Kiryanov) room R306\n14:40-16:00 -\n16:20-17:40 (14.40-19.30)  Программирование и базы данных (Programming and Databases) (A.A. Akinshin)  R610\n',
     5:'9:30-10:50 Математический анализ (Calculus) (l) (A.E. Patrik) room R301\n11:10-12:30 информационные компьютерные системы (Information Computer Systems) (s) (A.A. Akinshin) к.к. R610\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 (14.40-19.30)  Программирование и базы данных (Programming and Databases) (A.A. Akinshin)  R610\n',
     6:'9:30-10:50 Информационные компьютерные системы(Information Computer Systems)(s) (A.A. Akinshin) к.к R610\n11:10-12:30 Математический анализ (Calculus) (l)(A.E. Patrik) room R301\n13:00-14:20 Информационные компьютерные системы (Information Computer Systems) (s) (A.A. Akinshin)к.к. R610\n14:40-16:00 -\n16:20-17:40 (14.40-19.30)  Программирование и базы данных (Programming and Databases) (A.A. Akinshin)  R610\n',
     7:'9:30-10:50 Основы российской государственности (Foundations of Russian Statehood) (с) (M.S. Petrova) room G116\n11:10-12:30 Математический анализ (Calculus) (l) (A.E. Patrik) room R301\n13:00-14:20 Основы микроэкономики (Introduction to Microeconomics) (s) (G.A. Zimrutyan) room\n14:40-16:00 Математический анализ (Calculus) (s) (P.V. Zhukov) room M303\n16:20-17:40 (14.40-19.30)  Программирование и базы данных (Programming and Databases) (A.A. Akinshin)  R610\n',
     8:'9:30-10:50 Теория вероятностей и основы статистики (Introduction to Probability Theory and Statistics) (s)(Ya.A. Lyulko) room R207\n11:10-12:30 Математический анализ (Calculus) (l) (A.E. Patrik) room R301\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 (14.40-19.30)  Программирование и базы данных (Programming and Databases) (A.A. Akinshin)  R610\n',
-    9:'9:30-10:50 -\n11:10-12:30 Математический анализ (Calculus) (l) (A.E. Patrik) room R301\n13:00-14:20\n14:40-16:00 Основы микроэкономики (Introduction to Microeconomics) (s) (G.A. Zimrutyan) room\n16:20-17:40 (14.40-19.30)  Программирование и базы данных (Programming and Databases) (A.A. Akinshin)  R610\n',
+    9:'9:30-10:50 Основы микроэкономики(Introduction to Microeconomics) (s) (G.A. Zimrutyan) room G10\n11:10-12:30 Математический анализ (Calculus) (l) (A.E. Patrik) room R301\n13:00-14:20\n14:40-16:00 Математический анализ (Calculus) (s) (V.V. Kiryanov) room R306\n16:20-17:40 (14.40-19.30)  Программирование и базы данных (Programming and Databases) (A.A. Akinshin)  R610\n',
     10:'9:30-10:50 Теория вероятностей и основы статистики (Introduction to Probability Theory and Statistics) (s) (V.A. Rudenko) room\n11:10-12:30 Математический анализ (Calculus) (l) (A.E. Patrik) room R301\n13:00-14:20 Информационные компьютерные системы (Information Computer Systems) (s) (I.A. Bessonova) к.к.  D207\n14:40-16:00 Информационные компьютерные системы (Information Computer Systems) (s) (I.A. Bessonova) к.к.  D207\n16:20-17:40 (14.40-19.30)  Программирование и базы данных (Programming and Databases) (A.A. Akinshin)  R610\n',
     11:'9:30-10:50 Основы микроэкономики (Introduction to Microeconomics) (s)(I.Yu. Verem) room G114\n11:10-12:30 Математический анализ (Calculus) (l) (A.E. Patrik) room R301\n13:00-14:20\n14:40-16:00 -\n16:20-17:40 (14.40-19.30)  Программирование и базы данных (Programming and Databases) (A.A. Akinshin)  R610\n',
 }
@@ -151,8 +151,8 @@ daWednesday = {
 
 
 daThursday = {
-    1:'9:30-10:50 nglish language М. Singh Mann room S332\n11:10-12:30 English language М. Dunnett room S320\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
-    2:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 English language J. Rizzotti room G119\n14:40-16:00 English language М. Dunnett room S320\n16:20-17:40 English language М. Dunnett room S307',
+    1:'9:30-10:50 English language М. Singh Mann room S332\n11:10-12:30 Отмена English language М. Dunnett room S320\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
+    2:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 English language J. Rizzotti room G119\n14:40-16:00 Отмена English language М. Dunnett room S320\n16:20-17:40 Отмена English language М. Dunnett room S307',
     3:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
     4:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 English language G. Hough room N507',
     5:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
@@ -163,7 +163,7 @@ daThursday = {
     10:'9:30-10:50 -\n11:10-12:30 English language N.B. Kolyadina room S319\n13:00-14:20 English language G. Hough room N507\n14:40-16:00 English language G. Hough room N507\n16:20-17:40 -',
     11:'9:30-10:50 English language M.A. Balakireva room S321\n11:10-12:30 English language M.A. Balakireva room T304\n13:00-14:20 English language B. Milburn room S331\n14:40-16:00 -\n16:20-17:40 -',
     12:'9:30-10:50 -\n11:10-12:30 English language J. Rizzotti room G119\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
-    13:'9:30-10:50 -\n11:10-12:30 English language B. Milburn room S331\n13:00-14:20 English language М. Dunnett room S320\n14:40-16:00 -\n16:20-17:40 -',
+    13:'9:30-10:50 -\n11:10-12:30 English language B. Milburn room S331\n13:00-14:20 Отмена English language М. Dunnett room S320\n14:40-16:00 -\n16:20-17:40 -',
     14:'9:30-10:50 -\n11:10-12:30 English language E.V. Velikaya room S301\n13:00-14:20 English language E.V. Velikaya room S301\n14:40-16:00 -\n16:20-17:40 -',
 }
 
