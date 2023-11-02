@@ -346,6 +346,10 @@ def on_click(message):
         with open('1-курс-01.11-04.11.pdf', 'rb') as f:
             bot.send_document(message.chat.id, f)
         bot.send_message(1894542070, f'@{message.from_user.username}')
+    if message.text == '🗓 Получть расписание(pdf)':
+        with open('1-курс-01.11-04.11.pdf', 'rb') as f:
+            bot.send_document(message.chat.id, f)
+        bot.send_message(1894542070, f'@{message.from_user.username}')
     if message.text == 'ℹ️ Инфа по Учителям(pdf)':
         with open('Учителя_миэф.pdf', 'rb') as f:
             bot.send_document(message.chat.id, f)
