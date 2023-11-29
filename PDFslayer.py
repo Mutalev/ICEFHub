@@ -152,7 +152,7 @@ daWednesday = {
 
 daThursday = {
     1:'9:30-10:50 English language М. Singh Mann room S332\n11:10-12:30 English language М. Dunnett room S320\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
-    2:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 English language J. Rizzotti room G119\n14:40-16:00 English language М. Dunnett room S320\n16:20-17:40 English language М. Dunnett room S331',
+    2:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 Перенос на 09.12 English language J. Rizzotti room G119\n14:40-16:00 English language М. Dunnett room S320\n16:20-17:40 English language М. Dunnett room S331',
     3:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
     4:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 English language G. Hough room N507',
     5:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
@@ -162,7 +162,7 @@ daThursday = {
     9:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
     10:'9:30-10:50 -\n11:10-12:30 English language N.B. Kolyadina room S319\n13:00-14:20 English language G. Hough room N507\n14:40-16:00 English language G. Hough room N507\n16:20-17:40 -',
     11:'9:30-10:50 English language M.A. Balakireva room S321\n11:10-12:30 English language M.A. Balakireva room T304\n13:00-14:20 English language B. Milburn room S331\n14:40-16:00 -\n16:20-17:40 -',
-    12:'9:30-10:50 -\n11:10-12:30 English language J. Rizzotti room G119\n13:00-14:20 English language N.B. Kolyadina room S319\n14:40-16:00 -\n16:20-17:40 -',
+    12:'9:30-10:50 -\n11:10-12:30 Перенос на 09.12 English language J. Rizzotti room G119\n13:00-14:20 English language N.B. Kolyadina room S319\n14:40-16:00 -\n16:20-17:40 -',
     13:'9:30-10:50 -\n11:10-12:30 English language B. Milburn room S331\n13:00-14:20 English language М. Dunnett room S320\n14:40-16:00 -\n16:20-17:40 -',
     14:'9:30-10:50 -\n11:10-12:30 English language E.V. Velikaya room S301\n13:00-14:20 English language E.V. Velikaya room S301\n14:40-16:00 -\n16:20-17:40 -',
 }
