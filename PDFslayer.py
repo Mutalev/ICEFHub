@@ -13,16 +13,16 @@ dMonday = {
 }
 
 dTuseday = {
-    1:'9:30-10:50 История России (Russian History) (s) (A.P. Tsareva) room R401\n11:10-12:30 Python программирование и обработка данных (Python Programming and Data Processing) (s) (I.A. Bessonova) к.к. R611\n 13:00-14:20 Python программирование и обработка данных (Python Programming and Data Processing) (s) (I.A. Bessonova) к.к. R611\n14:40-16:00 Основы макроэкономики (Introduction to Macroeconomics) (l) (T.Yu. Matveeva) room R204',
+    1:'9:30-10:50 История России (Russian History) (s) (A.P. Tsareva) room R401\n11:10-12:30 Python программирование и обработка данных (Python Programming and Data Processing) (s) (I.A. Bessonova) к.к. T316\n 13:00-14:20 Python программирование и обработка данных (Python Programming and Data Processing) (s) (I.A. Bessonova) к.к. T316\n14:40-16:00 Основы макроэкономики (Introduction to Macroeconomics) (l) (T.Yu. Matveeva) room R204',
     2:'9:30-10:50 История России (Russian History) (s) (A.P. Tsareva) room R401\n11:10-12:30 История России (Russian History) (s) (I.V. Smirnova) room D501\n13:00-14:20 -\n14:40-16:00 Основы макроэкономики (Introduction to Macroeconomics) (l) (T.Yu. Matveeva) room R204\n16:20-17:40 -',
-    3:'9:30-10:50 История России (Russian History) (s) (A.P. Tsareva) room R401\n11:10-12:30 История России (Russian History) (s) (A. Aianami) room R207\n13:00-14:20 Математический анализ (Calculus) (s) (A.D. Vorchik) room G004\n14:40-16:00 Основы макроэкономики (Introduction to Macroeconomics) (l) (T.Yu. Matveeva) room R204\n16:20-17:40 -',
-    4:'9:30-10:50 История России (Russian History) (s) (A.P. Tsareva) room R401\n11:10-12:30 -\n13:00-14:20 Теория вероятностей и основы статистики (Introduction to Probability Theory and Statistics) (s) (V.A. Rudenko) room G405\n14:40-16:00 Основы макроэкономики (Introduction to Macroeconomics) (l) (T.Yu. Matveeva) room R204\n16:20-17:40 -',
+    3:'9:30-10:50 История России (Russian History) (s) (A.P. Tsareva) room R401\n11:10-12:30 История России (Russian History) (s) (A. Aianami) room R207\n13:00-14:20 Математический анализ (Calculus) (s) (A.D. Vorchik) room G103\n14:40-16:00 Основы макроэкономики (Introduction to Macroeconomics) (l) (T.Yu. Matveeva) room R204\n16:20-17:40 -',
+    4:'9:30-10:50 История России (Russian History) (s) (A.P. Tsareva) room R401\n11:10-12:30 -\n13:00-14:20 Теория вероятностей и основы статистики (Introduction to Probability Theory and Statistics) (s) (V.A. Rudenko) room D201\n14:40-16:00 Основы макроэкономики (Introduction to Macroeconomics) (l) (T.Yu. Matveeva) room R204\n16:20-17:40 -',
     5:'9:30-10:50 История России (Russian History) (s) (A.P. Tsareva) room R401\n11:10-12:30 -\n13:00-14:20 История России (Russian History) (s) (A. Aianami) room R207\n14:40-16:00 Основы макроэкономики (Introduction to Macroeconomics) (l) (T.Yu. Matveeva) room R204\n16:20-17:40 -',
     6:'9:30-10:50 История России (Russian History) (s) (A.P. Tsareva) room R401\n11:10-12:30 -\n13:00-14:20 Основы макроэкономики (Introduction to Macroeconomics) (l) (T.Yu. Matveeva) room R204\n14:40-16:00 -\n16:20-17:40 -',
     7:'9:30-10:50 История России (Russian History) (s) (A.P. Tsareva) room R401\n11:10-12:30 -\n 13:00-14:20 Основы макроэкономики (Introduction to Macroeconomics) (l) (T.Yu. Matveeva) room R204\n14:40-16:00 Python программирование и обработка данных (Python Programming and Data Processing) (s) (I.A. Bessonova) к.к. R611\n16:20-17:40 Python программирование и обработка данных (Python Programming and Data Processing) (s) (I.A. Bessonova) к.к. R611',
     8:'9:30-10:50 История России (Russian History) (s) (A.P. Tsareva) room R401\n11:10-12:30 -\n13:00-14:20 Основы макроэкономики (Introduction to Macroeconomics) (l) (T.Yu. Matveeva) room R204\n14:40-16:00 -\n16:20-17:40 -',
     9:'9:30-10:50 История России (Russian History) (s) (A.P. Tsareva) room R401\n11:10-12:30 Теория вероятностей и основыстатистики(Introduction to Probability Theory and Statistics) (s) (V.A. Rudenko)room G109\n 13:00-14:20 Основы макроэкономики (Introduction to Macroeconomics) (l) (T.Yu. Matveeva) room R204\n14:40-16:00 -\n16:20-17:40 -',
-    10:'9:30-10:50 История России (Russian History) (s) (A.P. Tsareva) room R401\n11:10-12:30 Математический анализ (Calculus) (s) (A.D. Vorchik) room G003\n 13:00-14:20 Основы макроэкономики (Introduction to Macroeconomics) (l) (T.Yu. Matveeva) room R204\n14:40-16:00 Теория вероятностей и основы статистики (Introduction to Probability Theory and Statistics) (s) (V.A. Rudenko) room G119\n16:20-17:40 -',
+    10:'9:30-10:50 История России (Russian History) (s) (A.P. Tsareva) room R401\n11:10-12:30 Математический анализ (Calculus) (s) (A.D. Vorchik) room D508\n 13:00-14:20 Основы макроэкономики (Introduction to Macroeconomics) (l) (T.Yu. Matveeva) room R204\n14:40-16:00 Теория вероятностей и основы статистики (Introduction to Probability Theory and Statistics) (s) (V.A. Rudenko) room G119\n16:20-17:40 -',
     11:'9:30-10:50 История России (Russian History) (s) (A.P. Tsareva) room R401\n11:10-12:30 -\n13:00-14:20 Основы макроэкономики (Introduction to Macroeconomics) (l) (T.Yu. Matveeva) room R204\n14:40-16:00 -\n16:20-17:40 -',
 }
 
@@ -37,7 +37,7 @@ dWednesday = {
     7:'9:30-10:50 Основы макроэкономики (Introduction to Macroeconomics) (s) (T.Yu. Matveeva) room M302\n11:10-12:30 Теория вероятностей и основы статистики (Introduction to Probability Theory and Statistics) (l) (Ya.A. Lyulko) room R204\n13:00-14:20 Теория вероятностей и основы статистики (Introduction to Probability Theory and Statistics) (A.E. Patrik) room M202\n14:40-16:00 -\n16:20-17:40 -',
     8:'9:30-10:50 История России (Russian History) (s) (I.V. Smirnova) room G119\n11:10-12:30 Теория вероятностей и основы статистики (Introduction to Probability Theory and Statistics) (l) (Ya.A. Lyulko) room R204\n13:00-14:20 Основы макроэкономики (Introduction to Macroeconomics) (s) (Yu.A. Loginova) room G407\n14:40-16:00 Python программирование и обработка данных (Python Programming and Data Processing) (s) (s)(I.A. Bessonova) к.к. R610\n16:20-17:40 Python программирование и обработка данных (Python Programming and Data Processing) (s) (s)(I.A. Bessonova) к.к. R610',
     9:'9:30-10:50 История России (Russian History) (s) (N.A. Fedonnikov) room G114\n11:10-12:30 Теория вероятностей и основы статистики (Introduction to Probability Theory and Statistics) (l) (Ya.A. Lyulko) room R204\n13:00-14:20 Основы макроэкономики (Introduction to Macroeconomics) (s) (T.Yu. Matveeva) room M302\n14:40-16:00 -\n16:20-17:40 -\n18:10-19:30 -',
-    10:'9:30-10:50 -\n11:10-12:30 Теория вероятностей и основы статистики (Introduction to Probability Theory and Statistics) (l) (Ya.A. Lyulko) room R204\n13:00-14:20 История России (Russian History) (s) (N.A. Fedonnikov) room G002\n14:40-16:00 Основы макроэкономики (Introduction to Macroeconomics) (s) (N.A. Sapunkova) room D508\n16:20-17:40 -',
+    10:'9:30-10:50 -\n11:10-12:30 Теория вероятностей и основы статистики (Introduction to Probability Theory and Statistics) (l) (Ya.A. Lyulko) room R204\n13:00-14:20 История России (Russian History) (s) (N.A. Fedonnikov) room G002\n14:40-16:00 Основы макроэкономики (Introduction to Macroeconomics) (s) (N.A. Sapunkova) room G409\n16:20-17:40 -',
     11:'9:30-10:50 Основы макроэкономики (Introduction to Macroeconomics) (s) (N.A. Sapunkova) room M303\n11:10-12:30 Теория вероятностей и основы статистики (Introduction to Probability Theory and Statistics) (l) (Ya.A. Lyulko) room R204\n13:00-14:20 -\n14:40-16:00 Основы макроэкономики (Introduction to Macroeconomics) (s) (N.A. Sapunkova) room M303\n16:20-17:40 -',
 }
 
@@ -45,8 +45,8 @@ dWednesday = {
 dThursday = {
     1:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
     2:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -\n18:10-19:30 -',
-    3:'9:30-10:50 Python программирование и обработка данных (Python Programming and Data Processing) (s) (N.A. Akin’shin) к.к. D210\n11:10-12:30 Python программирование и обработка данных (Python Programming and Data Processing) (s) (N.A. Akin’shin) к.к. D210\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
-    4:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 Python программирование и обработка данных (Python Programming and Data Processing) (s) (N.A. Akin’shin) к.к. D210\n14:40-16:00 Python программирование и обработка данных (Python Programming and Data Processing) (s) (N.A. Akin’shin) к.к. D210\n16:20-17:40 -',
+    3:'9:30-10:50 Перенос на 27.01 Python программирование и обработка данных (Python Programming and Data Processing) (s) (N.A. Akin’shin) к.к. D210\n11:10-12:30 Перенос на 27.01 Python программирование и обработка данных (Python Programming and Data Processing) (s) (N.A. Akin’shin) к.к. D210\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
+    4:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 Перенос на 27.01 Python программирование и обработка данных (Python Programming and Data Processing) (s) (N.A. Akin’shin) к.к. D210\n14:40-16:00 Перенос на 27.01 Python программирование и обработка данных (Python Programming and Data Processing) (s) (N.A. Akin’shin) к.к. D210\n16:20-17:40 -',
     5:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
     6:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
     7:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-19:30 -',
@@ -59,16 +59,16 @@ dThursday = {
 
 
 dFriday = {
-    1:'9:30-10:50 Математический анализ (Calculus) (l) (A.E. Patrik) room R301\n11:10-12:30 Математический анализ(Calculus) (s) (P.V. Zhukov) room М302\n13:00-14:20 Основы макроэкономики (Introduction to Macroeconomics) (s) (N.A. Sapunkova) room D502\n14:40-16:00 -\n16:20-17:40 -\n',
+    1:'9:30-10:50 Математический анализ (Calculus) (l) (A.E. Patrik) room R301\n11:10-12:30 Математический анализ(Calculus) (s) (P.V. Zhukov) room М302\n13:00-14:20 История России (Russian History) (s) (A.P. Tsareva) room R205\n14:40-16:00 -\n16:20-17:40 -\n',
     2:'9:30-10:50 Математический анализ (Calculus) (l) (A.E. Patrik) room R301\n11:10-12:30 Теория вероятностей и основы статистики (Introduction to Probability Theory and Statistics) (s) (Ya.A. Lyulko) room R208\n13:00-14:20 Математический анализ(Calculus) (s) (P.V. Zhukov) room D107\n14:40-16:00 -\n16:20-17:40 -\n',
     3:'9:30-10:50 Математический анализ (Calculus) (l) (A.E. Patrik) room R301\n11:10-12:30 Основы макроэкономики (introduction to Macroeconomics) (s) (N.A. Sapunkova) room R307\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -\n',
     4:'9:30-10:50 Математический анализ (Calculus) (l) (A.E. Patrik) room R301\n11:10-12:30 История России (Russian History) (s) (M.S. Petrova) room R207\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40  16.20-19.30 -\n',
     5:'9:30-10:50 Математический анализ (Calculus) (l) (A.E. Patrik) room R301\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -\n',
     6:'9:30-10:50 Математический анализ (Calculus) (l) (A.E. Patrik) room R301\n11:10-12:30 Python программирование и обработка данных (Python Programming and Data Processing) (s) (A.A. Akinshin) к.к. N204\n13:00-14:20 Python программирование и обработка данных (Python Programming and Data Processing) (s) (A.A. Akinshin) к.к. N204\n14:40-16:00 -\n16:20-17:40 -\n',
-    7:'9:30-10:50 -\n11:10-12:30 Математический анализ (Calculus) (l) (A.E. Patrik) room R301\n13:00-14:20 История России (Russian History) (s) (M.S. Petrova) room D508\n14:40-16:00 Математический анализ (Calculus) (s) (P.V. Zhukov) room D107\n16:20-17:40 -\n',
+    7:'9:30-10:50 -\n11:10-12:30 Математический анализ (Calculus) (l) (A.E. Patrik) room R301\n13:00-14:20 История России (Russian History) (s) (M.S. Petrova) room R308\n14:40-16:00 Математический анализ (Calculus) (s) (P.V. Zhukov) room D107\n16:20-17:40 -\n',
     8:'9:30-10:50 Теория вероятностей и основы статистики (Introduction to Probability Theory and Statistics) (s)(Ya.A. Lyulko) room R208\n11:10-12:30 Математический анализ (Calculus) (l) (A.E. Patrik) room R301\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -\n',
-    9:'9:30-10:50 -\n11:10-12:30 Математический анализ (Calculus) (l) (A.E. Patrik) room R301\n13:00-14:20 -\n14:40-16:00 Python программирование и обработка данных (Python Programming and Data Processing) (s) (A.A. Akinshin)к.к. D210\n16:20-17:40 Python программирование и обработка данных (Python Programming and Data Processing) (s) (A.A. Akinshin)к.к. D210\n',
-    10:'9:30-10:50 -\n11:10-12:30 Математический анализ (Calculus) (l) (A.E. Patrik) room R301\n13:00-14:20 Python программирование и обработка данных (Python Programming and Data Processing) (s) (I.A. Bessonova) к.к. R602\n14:40-16:00 Python программирование и обработка данных (Python Programming and Data Processing) (s) (I.A. Bessonova) к.к. R602\n16:20-17:40 -\n',
+    9:'9:30-10:50 -\n11:10-12:30 Математический анализ (Calculus) (l) (A.E. Patrik) room R301\n13:00-14:20 -\n14:40-16:00 Python программирование и обработка данных (Python Programming and Data Processing) (s) (A.A. Akinshin)к.к. R610\n16:20-17:40 Python программирование и обработка данных (Python Programming and Data Processing) (s) (A.A. Akinshin)к.к. R610\n',
+    10:'9:30-10:50 -\n11:10-12:30 Математический анализ (Calculus) (l) (A.E. Patrik) room R301\n13:00-14:20 Python программирование и обработка данных (Python Programming and Data Processing) (s) (I.A. Bessonova) к.к. R611\n14:40-16:00 Python программирование и обработка данных (Python Programming and Data Processing) (s) (I.A. Bessonova) к.к. R611\n16:20-17:40 -\n',
     11:'9:30-10:50 История России (Russian History) (s) (M.S. Petrova) room R207\n11:10-12:30 Математический анализ (Calculus) (l) (A.E. Patrik) room R301\n13:00-14:20\n14:40-16:00 -\n16:20-17:40 -\n',
 }
 
@@ -77,12 +77,12 @@ dFriday = {
 dSaturday = {
     1:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
     2:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
-    3:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 Б. Трехсвятительский пер. д.3 Python программирование и обработка данных (Python Programming and Data Processing) (s) (N.A. Akin’shin) к.к. 435\n16:20-17:40 Б. Трехсвятительский пер. д.3 Python программирование и обработка данных (Python Programming and Data Processing) (s) (N.A. Akin’shin) к.к. 435\n18:10-19:30 -',
-    4:'9:30-10:50 Б. Трехсвятительский пер. д.3 Python программирование и обработка данных (Python Programming and Data Processing) (s) (N.A. Akin’shin) к.к. 421\n11:10-12:30 Б. Трехсвятительский пер. д.3 Python программирование и обработка данных (Python Programming and Data Processing) (s) (N.A. Akin’shin) к.к. 421\n13:00-14:20 Математический анализ (Calculus) (s) (V.V. Kiryanov) room N506\n14:40-16:00 -\n16:20-17:40 -',
+    3:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -\n18:10-19:30 -',
+    4:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 Математический анализ (Calculus) (s) (V.V. Kiryanov) room G114\n14:40-16:00 -\n16:20-17:40 -',
     5:'9:30-10:50 Python программирование и обработка данных (Python Programming and Data Processing) (s) (A.A. Akinshin) к.к. R610\n11:10-12:30 Python программирование и обработка данных (Python Programming and Data Processing) (s) (A.A. Akinshin) к.к. R610\n13:00-14:20 Математический анализ (Calculus) (s)(P.I. Mamaeva) room D202\n14:40-16:00 -\n16:20-17:40 -',
     6:'9:30-10:50 Математический анализ (Calculus) (s) (K.V. Kovaltsun) room M203\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
     7:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
-    8:'9:30-10:50 -\n11:10-12:30 Математический анализ (Calculus) (s) (P.I. Mamaeva) room N506\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
+    8:'9:30-10:50 -\n11:10-12:30 Математический анализ (Calculus) (s) (P.I. Mamaeva) room D502\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
     9:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 Математический анализ (Calculus) (s) (V.V. Kiryanov) room N508\n16:20-17:40 -',
     10:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
     11:'9:30-10:50 -\n11:10-12:30 Математический анализ (Calculus) (s) (K.V. Kovaltsun) room G115\n13:00-14:20 Python программирование и обработка данных Python Programming and Data Processing) (s) (A.A. Akinshin) к.к. R610\n14:40-16:00 Python программирование и обработка данных Python Programming and Data Processing) (s) (A.A. Akinshin) к.к. R610\n16:20-17:40 -',
@@ -98,15 +98,15 @@ daMonday = {
     3:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 English language J. Rizzotti room S322\n14:40-16:00 English language J. Rizzotti room S322\n16:20-17:40 English language М. Dunnett room S320',
     4:'9:30-10:50 English language B. Milburn room S328\n11:10-12:30 English languageB. Milburn room S328\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
     5:'9:30-10:50 English language J. Rizzotti room S322\n11:10-12:30 English language J. Rizzotti room S322\n13:00-14:20 English language М. Dunnett room S320\n14:40-16:00 -\n16:20-17:40 -',
-    6:'9:30-10:50 English language M.A. Balakireva room S319\n11:10-12:30 -\n13:00-14:20 English languageB. Milburn room S328\n14:40-16:00 English languageB. Milburn room S328\n16:20-17:40 -',
+    6:'9:30-10:50 Отмена English language M.A. Balakireva room S319\n11:10-12:30 -\n13:00-14:20 English languageB. Milburn room S328\n14:40-16:00 English languageB. Milburn room S328\n16:20-17:40 -',
     7:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
     8:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
-    9:'9:30-10:50 English language М. Singh Mann room S301\n11:10-12:30 English language М. Singh Mann room S301\n13:00-14:20 English language M.A. Balakireva room S319\n14:40-16:00 -\n16:20-17:40 -',
+    9:'9:30-10:50 English language М. Singh Mann room S301\n11:10-12:30 English language М. Singh Mann room S301\n13:00-14:20 Отмена English language M.A. Balakireva room S319\n14:40-16:00 -\n16:20-17:40 -',
     10:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
     11:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
-    12:'9:30-10:50 -\n11:10-12:30 English language N.B. Kolyadina room  M203\n13:00-14:20 English language N.B. Kolyadina room  M203\n14:40-16:00 -\n16:20-17:40 -',
+    12:'9:30-10:50 -\n11:10-12:30 English language N.B. Kolyadina room  S319\n13:00-14:20 English language N.B. Kolyadina room  S319\n14:40-16:00 -\n16:20-17:40 -',
     13:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 English language E.V. Velikaya room S321\n14:40-16:00 English language E.V. Velikaya room S321\n16:20-17:40 -',
-    14:'9:30-10:50 -\n11:10-12:30 English language M.A. Balakireva room S319\n13:00-14:20 English language М. Singh Mann room S301\n14:40-16:00 -\n16:20-17:40 -',
+    14:'9:30-10:50 -\n11:10-12:30 Отмена English language M.A. Balakireva room S319\n13:00-14:20 English language М. Singh Mann room S301\n14:40-16:00 -\n16:20-17:40 -',
 }
 
 
@@ -158,10 +158,10 @@ daThursday = {
     5:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
     6:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
     7:'9:30-10:50 English language B. Milburn room S331\n11:10-12:30 English language М. Singh Mann room S332\n13:00-14:20 English language М. Singh Mann room S332\n14:40-16:00 -\n16:20-17:40 -',
-    8:'9:30-10:50 English language G. Hough room N507\n11:10-12:30 English language G. Hough room N507\n13:00-14:20 English language M.A. Balakireva room T304\n14:40-16:00 -\n16:20-17:40 -',
+    8:'9:30-10:50 English language G. Hough room N507\n11:10-12:30 English language G. Hough room N507\n13:00-14:20 Отмена English language M.A. Balakireva room T304\n14:40-16:00 -\n16:20-17:40 -',
     9:'9:30-10:50 -\n11:10-12:30 -\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
     10:'9:30-10:50 -\n11:10-12:30 English language N.B. Kolyadina room S319\n13:00-14:20 English language G. Hough room N507\n14:40-16:00 English language G. Hough room N507\n16:20-17:40 -',
-    11:'9:30-10:50 English language M.A. Balakireva room T304\n11:10-12:30 English language M.A. Balakireva room T304\n13:00-14:20 English language B. Milburn room S331\n14:40-16:00 -\n16:20-17:40 -',
+    11:'9:30-10:50 Отмена English language M.A. Balakireva room T304\n11:10-12:30 Отмена English language M.A. Balakireva room T304\n13:00-14:20 English language B. Milburn room S331\n14:40-16:00 -\n16:20-17:40 -',
     12:'9:30-10:50 -\n11:10-12:30 English language J. Rizzotti room S322\n13:00-14:20 -\n14:40-16:00 -\n16:20-17:40 -',
     13:'9:30-10:50 -\n11:10-12:30 English language B. Milburn room S331\n13:00-14:20 English language М. Dunnett room S320\n14:40-16:00 -\n16:20-17:40 -',
     14:'9:30-10:50 -\n11:10-12:30 English language E.V. Velikaya room S301\n13:00-14:20 English language E.V. Velikaya room S301\n14:40-16:00 -\n16:20-17:40 -',
