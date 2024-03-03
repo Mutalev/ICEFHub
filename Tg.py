@@ -328,8 +328,9 @@ def on_click(message):
     js(all_users_data)
     s = str(message.from_user.last_name) + ' ' + str(message.from_user.first_name)
     if message.text == '📊 Ваши Данные':
-        bot.send_message(message.chat.id, 'Введите: Фамилию Имя' )
-        bot.register_next_step_handler(message, add_user )
+        bot.send_message(message.chat.id, 'Не в ресурсе(' )
+        # bot.send_message(message.chat.id, 'Введите: Фамилию Имя' )
+        # bot.register_next_step_handler(message, add_user )
     if message.text == 'ℹ️ Инфа по Академ. группам':
         markup = types.InlineKeyboardMarkup()
         btn1 = types.InlineKeyboardButton('Участники группы', callback_data='gaf')
@@ -343,11 +344,11 @@ def on_click(message):
         markup.row(btn1,btn2)
         bot.send_message(message.chat.id, 'Выберете действие', reply_markup=markup)
     if message.text == '🗓 Получить расписание(pdf)':
-        with open('1-курс-26.02-02.03.pdf', 'rb') as f:
+        with open('1-курс-04.03-09.03.pdf', 'rb') as f:
             bot.send_document(message.chat.id, f)
         bot.send_message(1894542070, f'@{message.from_user.username}')
     if message.text == '🗓 Получть расписание(pdf)':
-        with open('1-курс-26.02-02.03.pdf', 'rb') as f:
+        with open('1-курс-04.03-09.03.pdf', 'rb') as f:
             bot.send_document(message.chat.id, f)
         bot.send_message(1894542070, f'@{message.from_user.username}')
     if message.text == 'ℹ️ Инфа по Учителям(pdf)':
