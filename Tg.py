@@ -344,11 +344,11 @@ def on_click(message):
         markup.row(btn1,btn2)
         bot.send_message(message.chat.id, 'Выберете действие', reply_markup=markup)
     if message.text == '🗓 Получить расписание(pdf)':
-        with open('1-курс-18.03-23.03.pdf', 'rb') as f:
+        with open('1-курс-01.04-06.04.pdf', 'rb') as f:
             bot.send_document(message.chat.id, f)
         bot.send_message(1894542070, f'@{message.from_user.username}')
     if message.text == '🗓 Получть расписание(pdf)':
-        with open('1-курс-18.03-23.03.pdf', 'rb') as f:
+        with open('1-курс-01.04-06.04.pdf', 'rb') as f:
             bot.send_document(message.chat.id, f)
         bot.send_message(1894542070, f'@{message.from_user.username}')
     if message.text == 'ℹ️ Инфа по Учителям(pdf)':
