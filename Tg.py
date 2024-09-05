@@ -328,7 +328,7 @@ def on_click(message):
     js(all_users_data)
     s = str(message.from_user.last_name) + ' ' + str(message.from_user.first_name)
     if message.text == '📊 Ваши Данные':
-        with open('Распределение по группам.txt', 'rb') as f:
+        with open('Распределение_студентов_по_группам_на_2_курс_2024_.xlsx', 'rb') as f:
             bot.send_document(message.chat.id, f)
     #     bot.send_message(message.chat.id, 'Не в ресурсе(' )
     #     bot.send_message(message.chat.id, 'Введите: Фамилию Имя' )
