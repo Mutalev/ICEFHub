@@ -346,13 +346,13 @@ def on_click(message):
         markup.row(btn1,btn2)
         bot.send_message(message.chat.id, 'Выберете действие', reply_markup=markup)
     if message.text == '🗓 Получить расписание(pdf)':
-        with open('2-курс-16.09-21.09.pdf', 'rb') as f:
+        with open('2-курс-23.09-28.09.pdf', 'rb') as f:
             bot.send_document(message.chat.id, f)
         # if message.from_user.id == 584787190:
         #     bot.send_message(message.chat.id, 'Купи билет в Ереван Лёвчику')
         bot.send_message(1894542070, f'@{message.from_user.username}')
     if message.text == '🗓 Получть расписание(pdf)':
-        with open('2-курс-16.09-21.09.pdf', 'rb') as f:
+        with open('2-курс-23.09-28.09.pdf', 'rb') as f:
             bot.send_document(message.chat.id, f)
         bot.send_message(1894542070, f'@{message.from_user.username}')
     if message.text == 'ℹ️ Инфа по Учителям(pdf)':
