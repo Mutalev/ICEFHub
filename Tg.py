@@ -359,7 +359,7 @@ def on_click(message):
         with open('Учителя_миэф.pdf', 'rb') as f:
             bot.send_document(message.chat.id, f)
     if message.text == '🗓 Расписание факультативов(pdf)':
-        with open('Расписание факультативов 1 семестр 2023-2024 уч.год.pdf', 'rb') as f:
+        with open('Расписание факультативов 1 семестр 2024-2025 уч.год.pdf', 'rb') as f:
             bot.send_document(message.chat.id, f)
         # if message.chat.id in participants:
         #     bot.send_message(message.chat.id, f'Вы <b>уже</b> учавствуете в розыгрыше на <b>Monasterio</b> в святыне - <b>Mutabor</b> .\n\nКоличество участников: <b>{len(participants)}</b>\n\nВероятность обратиться в технокобру: <b>{1/len(participants):.2g}</b>', parse_mode='HTML')
