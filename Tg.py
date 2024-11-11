@@ -102,7 +102,7 @@ def main(message):
     btn1 = types.KeyboardButton('📊 Ваши Данные')
     btn4 = types.KeyboardButton('🗓 Получить расписание(pdf)')
     markup.row(btn1, btn4)
-    btn2 = types.KeyboardButton('ℹ️ Инфа по Академ. группам')
+    btn2 = types.KeyboardButton('🤙🏻 Связь')
     btn3 = types.KeyboardButton('🗓 Расписание экзаменов')
     btn5 = types.KeyboardButton('ℹ️ Инфа по Учителям(pdf)')
     btn6 = types.KeyboardButton('🗓 Расписание факультативов(pdf)')
@@ -113,7 +113,7 @@ def main(message):
 
     📊 <b>Ваши Данные</b> - отпраялет файл с распределением по группам.
 
-    ℹ️ <b>Инфа по Академ. группам</b> - информация о конкретной академической группе (состав и расписание).
+    🤙🏻 <b>Связь</b> - написать боту в одностороннем порядке.
 
     🗓 <b>Расписание экзаменов</b> - Расписание экзаменов.
 
@@ -130,17 +130,19 @@ def main(message):
     bot.send_message(message.chat.id, text, parse_mode='HTML', reply_markup=markup)    # bot.register_next_step_handler(message, on_click)
 
 def add_user(message):
-    s = findGroups(message.text).split()
-    bot.send_message(1894542070, f'{message.text}\n{message.from_user.username}\n{message.from_user.first_name, message.from_user.last_name}' )
-    if len(s) == 0:
-        bot.send_message(message.chat.id, 'Проверьте верность введённых данных в формате (Фамилия Имя) или такого человека нет в МИЭФ 1й курс')
-    else:
-        bot.send_message(message.chat.id, f"{s[0]}  <b>{s[1]}</b> \n{s[2]}   <b>{s[3]}</b>", parse_mode='html')
-        markup = types.InlineKeyboardMarkup()
-        datatosend = s[1] + ' ' + s[3]
-        btn1 = types.InlineKeyboardButton('Моё расписание', callback_data=f'fac_{datatosend}')
-        markup.row(btn1)
-        bot.send_message(message.chat.id, 'Жми', reply_markup=markup)
+    # s = findGroups(message.text).split()
+    if (message.text != "🗓 Получить расписание(pdf)") and (message.text != "📊 Ваши Данные") and (message.text != "🗓 Расписание факультативов(pdf)") and (message.text != "🗓 Расписание экзаменов") and (message.text != "🤙🏻 Связь") and (message.text != "ℹ️ Инфа по Учителям(pdf)"):
+        bot.send_message(1894542070, f'{message.text}\n@{message.from_user.username}\n{message.from_user.first_name, message.from_user.last_name}' )
+    bot.send_message(message.chat.id, 'Сообщение принято')
+    # if len(s) == 0:
+    #     bot.send_message(message.chat.id, 'Проверьте верность введённых данных в формате (Фамилия Имя) или такого человека нет в МИЭФ 1й курс')
+    # else:
+    #     bot.send_message(message.chat.id, f"{s[0]}  <b>{s[1]}</b> \n{s[2]}   <b>{s[3]}</b>", parse_mode='html')
+    #     markup = types.InlineKeyboardMarkup()
+    #     datatosend = s[1] + ' ' + s[3]
+    #     btn1 = types.InlineKeyboardButton('Моё расписание', callback_data=f'fac_{datatosend}')
+    #     markup.row(btn1)
+    #     bot.send_message(message.chat.id, 'Жми', reply_markup=markup)
 
     
 @bot.message_handler(commands=['admin1234'])
@@ -163,7 +165,7 @@ def main(message):
     data(message.from_user.id, message.from_user.username)
     text = """
     📊 <b>Ваши Данные</b> - Рсапределение по группам.
-    ℹ️ <b>Инфа по Академ. группам</b> - информация о конкретной академической группе (состав и расписание).
+    🤙🏻 <b>Связь</b> - написать боту в одностороннем порядке.
     🗓 <b>Расписание экзаменов</b> - Расписание экзаменов.
     ℹ️ <b>Инфа по Учителям(pdf)</b> - список учителей и их почты, офисные часы(не все!).
     🗓 <b>Получть расписание(pdf)</b> - общее расписание в виде таблицы.
@@ -344,12 +346,13 @@ def on_click(message):
     #     bot.send_message(message.chat.id, 'Не в ресурсе(' )
     #     bot.send_message(message.chat.id, 'Введите: Фамилию Имя' )
     #     bot.register_next_step_handler(message, add_user )
-    if message.text == 'ℹ️ Инфа по Академ. группам':
-        markup = types.InlineKeyboardMarkup()
-        btn1 = types.InlineKeyboardButton('Участники группы', callback_data='gaf')
-        btn2 = types.InlineKeyboardButton('Расписание группы', callback_data='gaf1')
-        markup.row(btn1,btn2)
-        bot.send_message(message.chat.id, 'Выберете действие', reply_markup=markup)
+    if message.text == '🤙🏻 Связь':
+        bot.register_next_step_handler(message, add_user)
+        # markup = types.InlineKeyboardMarkup()
+        # btn1 = types.InlineKeyboardButton('Участники группы', callback_data='gaf')
+        # btn2 = types.InlineKeyboardButton('Расписание группы', callback_data='gaf1')
+        # markup.row(btn1,btn2)
+        # bot.send_message(message.chat.id, 'Выберете действие', reply_markup=markup)
     if message.text == '🗓 Расписание экзаменов':
         with open('Зимняя сессия_2 курс.pdf', 'rb') as f:
             bot.send_document(message.chat.id, f)
