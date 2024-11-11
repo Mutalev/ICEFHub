@@ -36,15 +36,26 @@ def dc(n):
                 s += f'{f}. {i} @{j}\n'
             f += 1
         else:
-            if c == 0:  
-                bot.send_message(1894542070, s)
-                c = 1
-                s = ''
-            if j is None:
-                s += f'{f}. {i} @none\n'
+            if f < 301:
+                if c == 0:  
+                    bot.send_message(1894542070, s)
+                    c = 1
+                    s = ''
+                if j is None:
+                    s += f'{f}. {i} @none\n'
+                else:
+                    s += f'{f}. {i} @{j}\n'
+                f += 1
             else:
-                s += f'{f}. {i} @{j}\n'
-            f += 1
+                if c == 1:  
+                    bot.send_message(1894542070, s)
+                    c = 2
+                    s = ''
+                if j is None:
+                    s += f'{f}. {i} @none\n'
+                else:
+                    s += f'{f}. {i} @{j}\n'
+                f += 1
     bot.send_message(1894542070, s)
 
 def data(id, nickname):
@@ -92,7 +103,7 @@ def main(message):
     btn4 = types.KeyboardButton('🗓 Получить расписание(pdf)')
     markup.row(btn1, btn4)
     btn2 = types.KeyboardButton('ℹ️ Инфа по Академ. группам')
-    btn3 = types.KeyboardButton('ℹ️ Инфа по Англ. группам')
+    btn3 = types.KeyboardButton('🗓 Расписание экзаменов')
     btn5 = types.KeyboardButton('ℹ️ Инфа по Учителям(pdf)')
     btn6 = types.KeyboardButton('🗓 Расписание факультативов(pdf)')
     markup.row(btn2, btn3)
@@ -104,7 +115,7 @@ def main(message):
 
     ℹ️ <b>Инфа по Академ. группам</b> - информация о конкретной академической группе (состав и расписание).
 
-    ℹ️ <b>Инфа по Англ. группам</b> - информация о конкретной английской группе (состав и расписание).
+    🗓 <b>Расписание экзаменов</b> - Расписание экзаменов.
 
     ℹ️ <b>Инфа по Учителям(pdf)</b> - список учителей и их почты, офисные часы(не все!).
 
@@ -132,7 +143,7 @@ def add_user(message):
         bot.send_message(message.chat.id, 'Жми', reply_markup=markup)
 
     
-@bot.message_handler(commands=['admin7162'])
+@bot.message_handler(commands=['admin1234'])
 def main(message):
     if message.from_user.id == 1894542070:
         bot.register_next_step_handler(message, ras)
@@ -153,7 +164,7 @@ def main(message):
     text = """
     📊 <b>Ваши Данные</b> - Рсапределение по группам.
     ℹ️ <b>Инфа по Академ. группам</b> - информация о конкретной академической группе (состав и расписание).
-    ℹ️ <b>Инфа по Англ. группам</b> - информация о конкретной английской группе (состав и расписание).
+    🗓 <b>Расписание экзаменов</b> - Расписание экзаменов.
     ℹ️ <b>Инфа по Учителям(pdf)</b> - список учителей и их почты, офисные часы(не все!).
     🗓 <b>Получть расписание(pdf)</b> - общее расписание в виде таблицы.
     🔧 <i>Если возникнут какие-то проблемы с ботом, сначала попробуйте перезапустить его</i> ( /start ).
@@ -339,12 +350,14 @@ def on_click(message):
         btn2 = types.InlineKeyboardButton('Расписание группы', callback_data='gaf1')
         markup.row(btn1,btn2)
         bot.send_message(message.chat.id, 'Выберете действие', reply_markup=markup)
-    if message.text == 'ℹ️ Инфа по Англ. группам':
-        markup = types.InlineKeyboardMarkup()
-        btn1 = types.InlineKeyboardButton('Участники группы', callback_data='gaf2')
-        btn2 = types.InlineKeyboardButton('Расписание группы', callback_data='gaf3')
-        markup.row(btn1,btn2)
-        bot.send_message(message.chat.id, 'Выберете действие', reply_markup=markup)
+    if message.text == '🗓 Расписание экзаменов':
+        with open('Зимняя сессия_2 курс.pdf', 'rb') as f:
+            bot.send_document(message.chat.id, f)
+        # markup = types.InlineKeyboardMarkup()
+        # btn1 = types.InlineKeyboardButton('Участники группы', callback_data='gaf2')
+        # btn2 = types.InlineKeyboardButton('Расписание группы', callback_data='gaf3')
+        # markup.row(btn1,btn2)
+        # bot.send_message(message.chat.id, 'Выберете действие', reply_markup=markup)
     if message.text == '🗓 Получить расписание(pdf)':
         with open('2-курс-11.11-16.11.pdf', 'rb') as f:
             bot.send_document(message.chat.id, f)
