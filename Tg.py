@@ -362,7 +362,7 @@ def on_click(message):
         # markup.row(btn1,btn2)
         # bot.send_message(message.chat.id, 'Выберете действие', reply_markup=markup)
     if message.text == '🗓 Получить расписание(pdf)':
-        with open('2-курс-11.11-16.11.pdf', 'rb') as f:
+        with open('2-курс-18.11-23.11.pdf', 'rb') as f:
             bot.send_document(message.chat.id, f)
         # if message.from_user.id == 584787190:
         #     bot.send_message(message.chat.id, 'Купи билет в Ереван Лёвчику')
