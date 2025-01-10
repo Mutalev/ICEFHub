@@ -362,20 +362,20 @@ def on_click(message):
         # markup.row(btn1,btn2)
         # bot.send_message(message.chat.id, 'Выберете действие', reply_markup=markup)
     if message.text == '🗓 Получить расписание(pdf)':
-        with open('2-курс-16.12-19.12.pdf', 'rb') as f:
+        with open('2-курс-20.01-25.01.pdf', 'rb') as f:
             bot.send_document(message.chat.id, f)
         # if message.from_user.id == 584787190:
         #     bot.send_message(message.chat.id, 'Купи билет в Ереван Лёвчику')
         bot.send_message(1894542070, f'@{message.from_user.username}')
     if message.text == '🗓 Получть расписание(pdf)':
-        with open('2-курс-16.12-19.12.pdf', 'rb') as f:
+        with open('2-курс-20.01-25.01.pdf', 'rb') as f:
             bot.send_document(message.chat.id, f)
         bot.send_message(1894542070, f'@{message.from_user.username}')
     if message.text == 'ℹ️ Инфа по Учителям(pdf)':
         with open('Учителя_миэф.pdf', 'rb') as f:
             bot.send_document(message.chat.id, f)
     if message.text == '🗓 Расписание факультативов(pdf)':
-        with open('Расписание факультативов 1 семестр 2024-2025 уч.год.pdf', 'rb') as f:
+        with open('Расписание факультативов 2 семестр 2024-2025 уч.год.pdf', 'rb') as f:
             bot.send_document(message.chat.id, f)
         # if message.chat.id in participants:
         #     bot.send_message(message.chat.id, f'Вы <b>уже</b> учавствуете в розыгрыше на <b>Monasterio</b> в святыне - <b>Mutabor</b> .\n\nКоличество участников: <b>{len(participants)}</b>\n\nВероятность обратиться в технокобру: <b>{1/len(participants):.2g}</b>', parse_mode='HTML')
