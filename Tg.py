@@ -356,6 +356,7 @@ def on_click(message):
     if message.text == '🗓 Расписание экзаменов':
         with open('Весеняя сессия_2 курс.pdf', 'rb') as f:
             bot.send_document(message.chat.id, f)
+        bot.send_message(1894542070, f'_ @{message.from_user.username}')
         # markup = types.InlineKeyboardMarkup()
         # btn1 = types.InlineKeyboardButton('Участники группы', callback_data='gaf2')
         # btn2 = types.InlineKeyboardButton('Расписание группы', callback_data='gaf3')
