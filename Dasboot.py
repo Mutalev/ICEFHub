@@ -63,6 +63,3 @@ def findGroup2(s):
 #         print(i)
 #         print('Академ группа: ' + d[i][0])
 #         print('Англ группа: ' + d[i][1])
-
-
-
