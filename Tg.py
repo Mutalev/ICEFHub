@@ -354,7 +354,7 @@ def on_click(message):
         # markup.row(btn1,btn2)
         # bot.send_message(message.chat.id, 'Выберете действие', reply_markup=markup)
     if message.text == '🗓 Расписание экзаменов':
-        with open('Расписание пересдач.pdf', 'rb') as f:
+        with open('Расписание экзаменов.pdf', 'rb') as f:
             bot.send_document(message.chat.id, f)
         bot.send_message(1894542070, f'_ @{message.from_user.username}')
         # markup = types.InlineKeyboardMarkup()
