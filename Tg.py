@@ -356,6 +356,8 @@ def on_click(message):
     if message.text == '🗓 Расписание экзаменов':
         with open('Расписание экзаменов.pdf', 'rb') as f:
             bot.send_document(message.chat.id, f)
+        with open('Распределение_студентов_3_курса_по_аудиториям_на_зимнюю_сессию.xlsx', 'rb') as g:
+            bot.send_document(message.chat.id, g)
         bot.send_message(1894542070, f'_ @{message.from_user.username}')
         # markup = types.InlineKeyboardMarkup()
         # btn1 = types.InlineKeyboardButton('Участники группы', callback_data='gaf2')
@@ -385,7 +387,7 @@ def on_click(message):
         #     bot.send_message(message.chat.id, f'Тепер вы учавствуете в розыгрыше на <b>Monasterio</b> в святыне - <b>Mutabor</b>.\n\nКоличество участников: <b>{len(participants)}</b>\n\nВероятность обратиться в технокобру: <b>{1/len(participants):.2g}</b>', parse_mode='HTML')
         # bot.send_message(1894542070, '\n'.join(f'{i + 1}. {j} @{participants[j]}' for i, j in enumerate(participants)))
         # js_participants(participants)
-    if message.text == 'Розыгрышь билета на тусич':
+    if message.text == 'Розыгрыш билета на тусич':
         bot.send_message(message.chat.id, 'Жми: /start' )
         # user_nickname = message.from_user.username
         # if user_nickname not in users_who_clicked:
