@@ -365,13 +365,13 @@ def on_click(message):
         # markup.row(btn1,btn2)
         # bot.send_message(message.chat.id, 'Выберете действие', reply_markup=markup)
     if message.text == '🗓 Получить расписание(pdf)':
-        with open('3-курс-23.02-28.02.pdf', 'rb') as f:
+        with open('3-курс-02.03-07.02.pdf', 'rb') as f:
             bot.send_document(message.chat.id, f)
         # if message.from_user.id == 584787190:
         #     bot.send_message(message.chat.id, 'Купи билет в Ереван Лёвчику')
         bot.send_message(1894542070, f'@{message.from_user.username}')
     if message.text == '🗓 Получть расписание(pdf)':
-        with open('3-курс-23.02-28.02.pdf', 'rb') as f:
+        with open('3-курс-02.03-07.02.pdf', 'rb') as f:
             bot.send_document(message.chat.id, f)
         bot.send_message(1894542070, f'@{message.from_user.username}')
     if message.text == 'ℹ️ Office hours':
