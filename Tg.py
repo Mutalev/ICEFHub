@@ -356,7 +356,7 @@ def on_click(message):
     if message.text == '🗓 Расписание экзаменов':
         with open('Расписание экзаменов.pdf', 'rb') as f:
             bot.send_document(message.chat.id, f)
-        with open('Распределение_студентов_3_курса_по_аудиториям_на_зимнюю_сессию.xlsx', 'rb') as g:
+        with open('Распределение_студентов_3_курса_по_аудиториям_на_весеннюю_сессию.xlsx', 'rb') as g:
             bot.send_document(message.chat.id, g)
         bot.send_message(1894542070, f'_ @{message.from_user.username}')
         # markup = types.InlineKeyboardMarkup()
