@@ -375,7 +375,7 @@ def on_click(message):
             bot.send_document(message.chat.id, f)
         bot.send_message(1894542070, f'@{message.from_user.username}')
     if message.text == 'ℹ️ Office hours':
-        with open('Office Hours - 3 year 2 семестр.pdf', 'rb') as f:
+        with open('Office Hours - 3 year.pdf', 'rb') as f:
             bot.send_document(message.chat.id, f)
     if message.text == '🗓 Расписание факультативов(pdf)':
         with open('List of Optional courses_2025-2026.pdf', 'rb') as f:
