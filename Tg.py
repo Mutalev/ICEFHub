@@ -356,8 +356,8 @@ def on_click(message):
     if message.text == '🗓 Расписание экзаменов':
         with open('Расписание экзаменов.pdf', 'rb') as f:
             bot.send_document(message.chat.id, f)
-        with open('Распределение студентов 3 курса по аудиториям на летнюю сессию.xlsx', 'rb') as g:
-            bot.send_document(message.chat.id, g)
+        # with open('Распределение студентов 3 курса по аудиториям на летнюю сессию.xlsx', 'rb') as g:
+        #     bot.send_document(message.chat.id, g)
         bot.send_message(1894542070, f'_ @{message.from_user.username}')
         # markup = types.InlineKeyboardMarkup()
         # btn1 = types.InlineKeyboardButton('Участники группы', callback_data='gaf2')
@@ -365,13 +365,13 @@ def on_click(message):
         # markup.row(btn1,btn2)
         # bot.send_message(message.chat.id, 'Выберете действие', reply_markup=markup)
     if message.text == '🗓 Получить расписание(pdf)':
-        with open('4-курс-01.09-05.09.pdf', 'rb') as f:
+        with open('4-курс-07.09-12.09.pdf', 'rb') as f:
             bot.send_document(message.chat.id, f)
         # if message.from_user.id == 584787190:
         #     bot.send_message(message.chat.id, 'Купи билет в Ереван Лёвчику')
         bot.send_message(1894542070, f'@{message.from_user.username}')
     if message.text == '🗓 Получть расписание(pdf)':
-        with open('4-курс-01.09-05.09.pdf', 'rb') as f:
+        with open('4-курс-07.09-12.09.pdf', 'rb') as f:
             bot.send_document(message.chat.id, f)
         bot.send_message(1894542070, f'@{message.from_user.username}')
     if message.text == 'ℹ️ Office hours':
